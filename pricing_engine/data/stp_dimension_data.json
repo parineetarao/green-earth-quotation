@@ -1,0 +1,1225 @@
+{
+  "source_note": "Extracted from ANNEXURE - III of the real company Word quotation templates. Some units have a blank or non-numeric size even in the real source documents -- this is preserved honestly (is_numeric: false), not filled in with a guess.",
+  "tiers": {
+    "50": [
+      {
+        "name": "Screen Chamber",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "2 m3",
+          "numeric_m3": 2.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Oil & Greases Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "3 m3",
+          "numeric_m3": 3.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Collection Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "20 m3",
+          "numeric_m3": 20.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Aeration Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "23 m3",
+          "numeric_m3": 23.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Secondary Settling Tank/Secondary Clarifier",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "8 m3",
+          "numeric_m3": 8.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Filter Feed Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "11 m3",
+          "numeric_m3": 11.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Foundation for Blower, Pump, Filter & Filter Press",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "Suitable",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 15"
+      },
+      {
+        "name": "Treated Water Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "11 m3",
+          "numeric_m3": 11.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Sludge Holding Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "MCC & Filter Room",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "Brick Masonry"
+      },
+      {
+        "name": "Flushing Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Garden Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      }
+    ],
+    "100": [
+      {
+        "name": "Screen Chamber",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "2 m3",
+          "numeric_m3": 2.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Oil & Greases Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "4 m3",
+          "numeric_m3": 4.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Collection Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "37 m3",
+          "numeric_m3": 37.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Aeration Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "43 m3",
+          "numeric_m3": 43.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Secondary Settling Tank/Secondary Clarifier",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "16 m3",
+          "numeric_m3": 16.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Filter Feed Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "22 m3",
+          "numeric_m3": 22.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Foundation for Blower, Pump, Filter & Filter Press",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "Suitable",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 15"
+      },
+      {
+        "name": "Treated Water Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "22 m3",
+          "numeric_m3": 22.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Sludge Holding Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "MCC & Filter Room",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "Brick Masonry"
+      },
+      {
+        "name": "Flushing Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Garden Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      }
+    ],
+    "150": [
+      {
+        "name": "Screen Chamber",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "3 m3",
+          "numeric_m3": 3.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Oil & Greases Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "6 m3",
+          "numeric_m3": 6.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Collection Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "55 m3",
+          "numeric_m3": 55.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Aeration Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "65 m3",
+          "numeric_m3": 65.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Secondary Settling Tank/Secondary Clarifier",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "24 m3",
+          "numeric_m3": 24.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Filter Feed Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "32 m3",
+          "numeric_m3": 32.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Foundation for Blower, Pump, Filter & Filter Press",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "Suitable",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 15"
+      },
+      {
+        "name": "Treated Water Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "32 m3",
+          "numeric_m3": 32.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Sludge Holding Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "MCC & Filter Room",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "Brick Masonry"
+      },
+      {
+        "name": "Flushing Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Garden Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      }
+    ],
+    "200": [
+      {
+        "name": "Screen Chamber",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "4 m3",
+          "numeric_m3": 4.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Oil & Greases Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "9 m3",
+          "numeric_m3": 9.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Collection Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "82 m3",
+          "numeric_m3": 82.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Aeration Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "87 m3",
+          "numeric_m3": 87.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Secondary Settling Tank/Secondary Clarifier",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "33 m3",
+          "numeric_m3": 33.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Filter Feed Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "38 m3",
+          "numeric_m3": 38.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Foundation for Blower, Pump, Filter & Filter Press",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "Suitable",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 15"
+      },
+      {
+        "name": "Treated Water Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "38 m3",
+          "numeric_m3": 38.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Sludge Holding Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "MCC & Filter Room",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "Brick Masonry"
+      },
+      {
+        "name": "Flushing Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Garden Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      }
+    ],
+    "250": [
+      {
+        "name": "Screen Chamber",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "4 m3",
+          "numeric_m3": 4.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Oil & Greases Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "9 m3",
+          "numeric_m3": 9.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Collection Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "100 m3",
+          "numeric_m3": 100.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Aeration Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "120 m3",
+          "numeric_m3": 120.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Secondary Settling Tank/Secondary Clarifier",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "36 m3",
+          "numeric_m3": 36.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Filter Feed Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "53 m3",
+          "numeric_m3": 53.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Foundation for Blower, Pump, Filter & Filter Press",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "Suitable",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 15"
+      },
+      {
+        "name": "Treated Water Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "53 m3",
+          "numeric_m3": 53.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Sludge Holding Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "MCC & Filter Room",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "Brick Masonry"
+      },
+      {
+        "name": "Flushing Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Garden Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      }
+    ],
+    "300": [
+      {
+        "name": "Screen Chamber",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "5 m3",
+          "numeric_m3": 5.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Oil & Greases Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "11 m3",
+          "numeric_m3": 11.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Collection Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "135 m3",
+          "numeric_m3": 135.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Aeration Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "130 m3",
+          "numeric_m3": 130.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Secondary Settling Tank/Secondary Clarifier",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "49 m3",
+          "numeric_m3": 49.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Filter Feed Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "65 m3",
+          "numeric_m3": 65.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Foundation for Blower, Pump, Filter & Filter Press",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "Suitable",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 15"
+      },
+      {
+        "name": "Treated Water Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "65 m3",
+          "numeric_m3": 65.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Sludge Holding Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "MCC & Filter Room",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "Brick Masonry"
+      },
+      {
+        "name": "Flushing Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Garden Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      }
+    ],
+    "350": [
+      {
+        "name": "Screen Chamber",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "6 m3",
+          "numeric_m3": 6.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Oil & Greases Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "15 m3",
+          "numeric_m3": 15.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Collection Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "155 m3",
+          "numeric_m3": 155.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Aeration Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "160 m3",
+          "numeric_m3": 160.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Secondary Settling Tank/Secondary Clarifier",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "56 m3",
+          "numeric_m3": 56.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Filter Feed Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "78 m3",
+          "numeric_m3": 78.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Foundation for Blower, Pump, Filter & Filter Press",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "Suitable",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 15"
+      },
+      {
+        "name": "Treated Water Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "78 m3",
+          "numeric_m3": 78.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Sludge Holding Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "MCC & Filter Room",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "Brick Masonry"
+      },
+      {
+        "name": "Flushing Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Garden Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      }
+    ],
+    "400": [
+      {
+        "name": "Screen Chamber",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "10 m3",
+          "numeric_m3": 10.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Oil & Greases Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "16 m3",
+          "numeric_m3": 16.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Collection Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "175 m3",
+          "numeric_m3": 175.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Aeration Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "170 m3",
+          "numeric_m3": 170.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Secondary Settling Tank/Secondary Clarifier",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "66 m3",
+          "numeric_m3": 66.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Filter Feed Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "86 m3",
+          "numeric_m3": 86.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Foundation for Blower, Pump, Filter & Filter Press",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "Suitable",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 15"
+      },
+      {
+        "name": "Treated Water Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "86 m3",
+          "numeric_m3": 86.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Sludge Holding Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "MCC & Filter Room",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "Brick Masonry"
+      },
+      {
+        "name": "Flushing Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Garden Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      }
+    ],
+    "450": [
+      {
+        "name": "Screen Chamber",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "10 m3",
+          "numeric_m3": 10.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Oil & Greases Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "18 m3",
+          "numeric_m3": 18.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Collection Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "200 m3",
+          "numeric_m3": 200.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Aeration Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "190 m3",
+          "numeric_m3": 190.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Secondary Settling Tank/Secondary Clarifier",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "72 m3",
+          "numeric_m3": 72.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Filter Feed Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "96 m3",
+          "numeric_m3": 96.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Foundation for Blower, Pump, Filter & Filter Press",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "Suitable",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 15"
+      },
+      {
+        "name": "Treated Water Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "96 m3",
+          "numeric_m3": 96.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Sludge Holding Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "MCC & Filter Room",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "Brick Masonry"
+      },
+      {
+        "name": "Flushing Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Garden Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      }
+    ],
+    "500": [
+      {
+        "name": "Screen Chamber",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "12 m3",
+          "numeric_m3": 12.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Oil & Greases Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "20 m3",
+          "numeric_m3": 20.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Collection Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "220 m3",
+          "numeric_m3": 220.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Aeration Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "215 m3",
+          "numeric_m3": 215.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Secondary Settling Tank/Secondary Clarifier",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "82 m3",
+          "numeric_m3": 82.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Filter Feed Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "110 m3",
+          "numeric_m3": 110.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Foundation for Blower, Pump, Filter & Filter Press",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "Suitable",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 15"
+      },
+      {
+        "name": "Treated Water Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "110 m3",
+          "numeric_m3": 110.0,
+          "is_numeric": true
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Sludge Holding Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "MCC & Filter Room",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "Brick Masonry"
+      },
+      {
+        "name": "Flushing Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      },
+      {
+        "name": "Garden Tank",
+        "quantity": "1 No.",
+        "size": {
+          "raw": "",
+          "numeric_m3": null,
+          "is_numeric": false
+        },
+        "material_of_construction": "RCC M 20"
+      }
+    ]
+  }
+}

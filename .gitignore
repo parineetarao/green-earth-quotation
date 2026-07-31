@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+storage/generated_quotations/*
+!storage/generated_quotations/.gitkeep

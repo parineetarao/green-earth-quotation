@@ -1,0 +1,2 @@
+Put your real, tagged Word template here as: stp_quotation_template.docx
+(A .docx is a binary/zip file, so it can't be created as a text placeholder — add the real file directly.)

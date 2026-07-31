@@ -1,0 +1,15 @@
+.git
+.gitignore
+.env
+.env.example
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+storage/generated_quotations/*
+!storage/generated_quotations/.gitkeep
+dashboard/
+.streamlit/
+README.md
+CLAUDE.md

@@ -1,0 +1,13 @@
+sqlalchemy
+psycopg2-binary
+python-dotenv
+pytest
+fastapi
+uvicorn[standard]
+google-genai
+requests
+docxtpl
+python-docx
+streamlit
+pandas
+altair

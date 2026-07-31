@@ -1,0 +1,2379 @@
+{
+  "source_note": "Extracted from real company Excel cost estimates. Capacities present here have verified real pricing data. Tiers listed in 'unpriced_tiers' have a quotation template but no cost estimate yet, and must not be silently guessed.",
+  "unpriced_tiers": [
+    550,
+    600
+  ],
+  "tiers": {
+    "50": {
+      "total": 1099467.5,
+      "line_items": [
+        {
+          "sr_no": 1,
+          "name": "Sewage Transfer Pump",
+          "specification": "2.5 cum/hr @ 12 m head",
+          "qty": 2,
+          "unit_rate": 12680,
+          "amount": 25360
+        },
+        {
+          "sr_no": 2,
+          "name": "Return sludge pump",
+          "specification": "2.5 cum/hr @ 12 m head",
+          "qty": 2,
+          "unit_rate": 12680,
+          "amount": 25360
+        },
+        {
+          "sr_no": 3,
+          "name": "Air Blower",
+          "specification": "80 cum/hr @ 0.45 kg/cm2",
+          "qty": 2,
+          "unit_rate": 35000,
+          "amount": 70000
+        },
+        {
+          "sr_no": 4,
+          "name": "Motor for air blower",
+          "specification": null,
+          "qty": 2,
+          "unit_rate": 10500,
+          "amount": 21000
+        },
+        {
+          "sr_no": 5,
+          "name": "Filter Feed Pump",
+          "specification": "2.5 cum/hr @ 30 m head",
+          "qty": 2,
+          "unit_rate": 8600,
+          "amount": 17200
+        },
+        {
+          "sr_no": 6,
+          "name": "Alum Dosing Pump",
+          "specification": "0-6 lph",
+          "qty": 1,
+          "unit_rate": 4500,
+          "amount": 4500
+        },
+        {
+          "sr_no": 7,
+          "name": "Alum Dosing tank",
+          "specification": "50 ltr",
+          "qty": 1,
+          "unit_rate": 1500,
+          "amount": 1500
+        },
+        {
+          "sr_no": 8,
+          "name": "Dual Media Filter",
+          "specification": "0.5 m dia x 1.5 m hos",
+          "qty": 1,
+          "unit_rate": 28000,
+          "amount": 28000
+        },
+        {
+          "sr_no": 9,
+          "name": "Activated carbon filter",
+          "specification": "0.5 m dia x 1.5 m hos",
+          "qty": 1,
+          "unit_rate": 28000,
+          "amount": 28000
+        },
+        {
+          "sr_no": 10,
+          "name": "Hypo chlorite pump",
+          "specification": "0-6 lph",
+          "qty": 1,
+          "unit_rate": 4500,
+          "amount": 4500
+        },
+        {
+          "sr_no": 11,
+          "name": "Hypo chlorite dosing tank",
+          "specification": "50 ltr",
+          "qty": 1,
+          "unit_rate": 1500,
+          "amount": 1500
+        },
+        {
+          "sr_no": 12,
+          "name": "Tube media",
+          "specification": "0.75 m ht",
+          "qty": 1.2,
+          "unit_rate": 8500,
+          "amount": 10200
+        },
+        {
+          "sr_no": 13,
+          "name": "MBBR",
+          "specification": null,
+          "qty": 3,
+          "unit_rate": 11200,
+          "amount": 33600
+        },
+        {
+          "sr_no": 14,
+          "name": "MCC PANEL",
+          "specification": "PLC based",
+          "qty": 1,
+          "unit_rate": 112500,
+          "amount": 112500
+        },
+        {
+          "sr_no": 15,
+          "name": "Inter connecting piping",
+          "specification": "UPVC",
+          "qty": 1,
+          "unit_rate": 65000,
+          "amount": 65000
+        },
+        {
+          "sr_no": 16,
+          "name": "Filter press",
+          "specification": "16\" X 16\" - 6 Nos capastan",
+          "qty": 1,
+          "unit_rate": 58000,
+          "amount": 58000
+        },
+        {
+          "sr_no": 17,
+          "name": "Diiffuser membrane",
+          "specification": "90 mm dia x 1000 mm",
+          "qty": 6,
+          "unit_rate": 3500,
+          "amount": 21000
+        },
+        {
+          "sr_no": 18,
+          "name": "cabling",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 25000,
+          "amount": 25000
+        },
+        {
+          "sr_no": 19,
+          "name": "MS pipe line",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 35000,
+          "amount": 35000
+        },
+        {
+          "sr_no": 20,
+          "name": "water meter",
+          "specification": "1.5\" dia mech",
+          "qty": 1,
+          "unit_rate": 7500,
+          "amount": 7500
+        },
+        {
+          "sr_no": 21,
+          "name": "UF system",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 380000,
+          "amount": 380000
+        },
+        {
+          "sr_no": 22,
+          "name": "Sand media",
+          "specification": "1) Pebbles 1-3/4\" : 200 kg 2) Pebbles 1/2-3/4 : 100 kg  3) Pebbles 1/2-1/4\" : 50 kg    4) Core Silex : 50 kg          5) Fine Sand : 50 kg",
+          "qty": 450,
+          "unit_rate": 5.75,
+          "amount": 2587.5
+        },
+        {
+          "sr_no": 23,
+          "name": "Activated carbon 900 iodine",
+          "specification": "100 kg",
+          "qty": 100,
+          "unit_rate": 68,
+          "amount": 6800
+        },
+        {
+          "sr_no": 24,
+          "name": "Bar Screen",
+          "specification": "as per the tank MS epoxy",
+          "qty": 1,
+          "unit_rate": 4500,
+          "amount": 4500
+        },
+        {
+          "sr_no": 25,
+          "name": "Air Grid",
+          "specification": "CT, FT & SHT",
+          "qty": 3,
+          "unit_rate": 4500,
+          "amount": 13500
+        },
+        {
+          "sr_no": 26,
+          "name": "Sludge Pump set",
+          "specification": "2.5 cum/hr @ 12 m head",
+          "qty": 2,
+          "unit_rate": 12680,
+          "amount": 25360
+        },
+        {
+          "sr_no": 27,
+          "name": "Erection Piping work",
+          "specification": "UPVC & MS",
+          "qty": 1,
+          "unit_rate": 25000,
+          "amount": 25000
+        },
+        {
+          "sr_no": 28,
+          "name": "Erection Caabling work",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 12000,
+          "amount": 12000
+        },
+        {
+          "sr_no": 28,
+          "name": "Commissioning",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 35000,
+          "amount": 35000
+        }
+      ]
+    },
+    "100": {
+      "total": 1518580,
+      "line_items": [
+        {
+          "sr_no": 1,
+          "name": "Sewage Transfer Pump",
+          "specification": "4.6 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 12680,
+          "amount": 25360
+        },
+        {
+          "sr_no": 2,
+          "name": "Return sludge pump",
+          "specification": "4.6 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 12680,
+          "amount": 25360
+        },
+        {
+          "sr_no": 3,
+          "name": "Air Blower",
+          "specification": "150 cum/hr @ 0.45 kg/cm2",
+          "qty": 2,
+          "unit_rate": 44000,
+          "amount": 88000
+        },
+        {
+          "sr_no": 4,
+          "name": "Motor for air blower",
+          "specification": "5 hp/1500 rpm",
+          "qty": 2,
+          "unit_rate": 10500,
+          "amount": 21000
+        },
+        {
+          "sr_no": 5,
+          "name": "Filter Feed Pump",
+          "specification": "4.6 cum/hr @ 35 m h",
+          "qty": 2,
+          "unit_rate": 14500,
+          "amount": 29000
+        },
+        {
+          "sr_no": 6,
+          "name": "Alum Dosing Pump",
+          "specification": "0-12 lph",
+          "qty": 1,
+          "unit_rate": 5600,
+          "amount": 5600
+        },
+        {
+          "sr_no": 7,
+          "name": "Alum Dosing tank",
+          "specification": "50 ltr",
+          "qty": 1,
+          "unit_rate": 1500,
+          "amount": 1500
+        },
+        {
+          "sr_no": 8,
+          "name": "Dual Media Filter",
+          "specification": "0.8 m dia x 1.5 m hos",
+          "qty": 1,
+          "unit_rate": 67000,
+          "amount": 67000
+        },
+        {
+          "sr_no": 9,
+          "name": "Activated carbon filter",
+          "specification": "0.8 m dia x 1.5 m hos",
+          "qty": 1,
+          "unit_rate": 67000,
+          "amount": 67000
+        },
+        {
+          "sr_no": 10,
+          "name": "Hypo chlorite pump",
+          "specification": "0-12 lph",
+          "qty": 1,
+          "unit_rate": 5600,
+          "amount": 5600
+        },
+        {
+          "sr_no": 11,
+          "name": "Hypo chlorite dosing tank",
+          "specification": "50 ltr",
+          "qty": 1,
+          "unit_rate": 1500,
+          "amount": 1500
+        },
+        {
+          "sr_no": 12,
+          "name": "Tube media",
+          "specification": "0.75 m ht",
+          "qty": 3,
+          "unit_rate": 8500,
+          "amount": 25500
+        },
+        {
+          "sr_no": 13,
+          "name": "MBBR",
+          "specification": null,
+          "qty": 6,
+          "unit_rate": 11500,
+          "amount": 69000
+        },
+        {
+          "sr_no": 14,
+          "name": "MCC PANEL",
+          "specification": "PLC based",
+          "qty": 1,
+          "unit_rate": 113700,
+          "amount": 113700
+        },
+        {
+          "sr_no": 15,
+          "name": "Inter connecting piping",
+          "specification": "UPVC",
+          "qty": 1,
+          "unit_rate": 65000,
+          "amount": 65000
+        },
+        {
+          "sr_no": 16,
+          "name": "Filter press",
+          "specification": "16\" X 16\" - 11 Nos Hand Pump",
+          "qty": 1,
+          "unit_rate": 78000,
+          "amount": 78000
+        },
+        {
+          "sr_no": 17,
+          "name": "Diiffuser membrane",
+          "specification": "90 mm dia x 1000 mm",
+          "qty": 8,
+          "unit_rate": 3500,
+          "amount": 28000
+        },
+        {
+          "sr_no": 18,
+          "name": "cabling",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 35000,
+          "amount": 35000
+        },
+        {
+          "sr_no": 19,
+          "name": "MS pipe line",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 45000,
+          "amount": 45000
+        },
+        {
+          "sr_no": 20,
+          "name": "water meter",
+          "specification": "1.5\" dia mech",
+          "qty": 1,
+          "unit_rate": 8200,
+          "amount": 8200
+        },
+        {
+          "sr_no": 21,
+          "name": "UF system",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 565000,
+          "amount": 565000
+        },
+        {
+          "sr_no": 22,
+          "name": "Sand media",
+          "specification": "1) Pebbles 1-3/4\" : 400 kg 2) Pebbles 1/2-3/4 : 400 kg  3) Pebbles 1/2-1/4\" : 150 kg    4) Core Silex : 150 kg          5) Fine Sand : 100 kg",
+          "qty": 1200,
+          "unit_rate": 5.75,
+          "amount": 6900
+        },
+        {
+          "sr_no": 23,
+          "name": "Activated carbon 900 iodine",
+          "specification": "250 kg",
+          "qty": 250,
+          "unit_rate": 68,
+          "amount": 17000
+        },
+        {
+          "sr_no": 24,
+          "name": "Bar Screen",
+          "specification": "as per the tank MS epoxy",
+          "qty": 1,
+          "unit_rate": 5500,
+          "amount": 5500
+        },
+        {
+          "sr_no": 25,
+          "name": "Air Grid",
+          "specification": "CT, FT & SHT",
+          "qty": 3,
+          "unit_rate": 6500,
+          "amount": 19500
+        },
+        {
+          "sr_no": 26,
+          "name": "Sludge Pump set",
+          "specification": "4.6 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 12680,
+          "amount": 25360
+        },
+        {
+          "sr_no": 27,
+          "name": "Erection Piping work",
+          "specification": "UPVC & MS",
+          "qty": 1,
+          "unit_rate": 25000,
+          "amount": 25000
+        },
+        {
+          "sr_no": 28,
+          "name": "Cabiling",
+          "specification": "Cable",
+          "qty": 1,
+          "unit_rate": 15000,
+          "amount": 15000
+        },
+        {
+          "sr_no": 29,
+          "name": "Commissioning",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 35000,
+          "amount": 35000
+        }
+      ]
+    },
+    "150": {
+      "total": 1970780,
+      "line_items": [
+        {
+          "sr_no": 1,
+          "name": "Sewage Transfer Pump",
+          "specification": "6.8 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 12680,
+          "amount": 25360
+        },
+        {
+          "sr_no": 2,
+          "name": "Return sludge pump",
+          "specification": "6.8 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 12680,
+          "amount": 25360
+        },
+        {
+          "sr_no": 3,
+          "name": "Air Blower",
+          "specification": "210 cum/hr @ 0.45 kg/cm2",
+          "qty": 2,
+          "unit_rate": 58000,
+          "amount": 116000
+        },
+        {
+          "sr_no": 4,
+          "name": "Motor for air blower",
+          "specification": "7.5 hp/1500 rpm",
+          "qty": 2,
+          "unit_rate": 15200,
+          "amount": 30400
+        },
+        {
+          "sr_no": 5,
+          "name": "Filter Feed Pump",
+          "specification": "6.8 cum/hr @ 35 m h",
+          "qty": 2,
+          "unit_rate": 14500,
+          "amount": 29000
+        },
+        {
+          "sr_no": 6,
+          "name": "Alum Dosing Pump",
+          "specification": "0-12 lph",
+          "qty": 1,
+          "unit_rate": 5600,
+          "amount": 5600
+        },
+        {
+          "sr_no": 7,
+          "name": "Alum Dosing tank",
+          "specification": "50 ltr",
+          "qty": 1,
+          "unit_rate": 1500,
+          "amount": 1500
+        },
+        {
+          "sr_no": 8,
+          "name": "Dual Media Filter",
+          "specification": "0.8 m dia x 1.5 m hos",
+          "qty": 1,
+          "unit_rate": 67000,
+          "amount": 67000
+        },
+        {
+          "sr_no": 9,
+          "name": "Activated carbon filter",
+          "specification": "0.8 m dia x 1.5 m hos",
+          "qty": 1,
+          "unit_rate": 67000,
+          "amount": 67000
+        },
+        {
+          "sr_no": 10,
+          "name": "Hypo chlorite pump",
+          "specification": "0-12 lph",
+          "qty": 1,
+          "unit_rate": 5600,
+          "amount": 5600
+        },
+        {
+          "sr_no": 11,
+          "name": "Hypo chlorite dosing tank",
+          "specification": "50 ltr",
+          "qty": 1,
+          "unit_rate": 1500,
+          "amount": 1500
+        },
+        {
+          "sr_no": 12,
+          "name": "Tube media",
+          "specification": "0.75 m ht",
+          "qty": 4.2,
+          "unit_rate": 8500,
+          "amount": 35700
+        },
+        {
+          "sr_no": 13,
+          "name": "MBBR",
+          "specification": null,
+          "qty": 9,
+          "unit_rate": 11500,
+          "amount": 103500
+        },
+        {
+          "sr_no": 14,
+          "name": "MCC PANEL",
+          "specification": "PLC based",
+          "qty": 1,
+          "unit_rate": 114800,
+          "amount": 114800
+        },
+        {
+          "sr_no": 15,
+          "name": "Inter connecting piping",
+          "specification": "UPVC",
+          "qty": 1,
+          "unit_rate": 65000,
+          "amount": 65000
+        },
+        {
+          "sr_no": 16,
+          "name": "Filter press",
+          "specification": "16\" X 16\" - 17 Nos Hand Pump",
+          "qty": 1,
+          "unit_rate": 98000,
+          "amount": 98000
+        },
+        {
+          "sr_no": 17,
+          "name": "Diiffuser membrane",
+          "specification": "90 mm dia x 1000 mm",
+          "qty": 12,
+          "unit_rate": 3500,
+          "amount": 42000
+        },
+        {
+          "sr_no": 18,
+          "name": "cabling",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 35000,
+          "amount": 35000
+        },
+        {
+          "sr_no": 19,
+          "name": "MS pipe line",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 45000,
+          "amount": 45000
+        },
+        {
+          "sr_no": 20,
+          "name": "water meter",
+          "specification": "1.5\" dia mech",
+          "qty": 1,
+          "unit_rate": 8200,
+          "amount": 8200
+        },
+        {
+          "sr_no": 21,
+          "name": "UF system",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 900000,
+          "amount": 900000
+        },
+        {
+          "sr_no": 22,
+          "name": "Sand media",
+          "specification": "1) Pebbles 1-3/4\" : 400 kg 2) Pebbles 1/2-3/4 : 400 kg  3) Pebbles 1/2-1/4\" : 150 kg    4) Core Silex : 150 kg          5) Fine Sand : 100 kg",
+          "qty": 1200,
+          "unit_rate": 5.75,
+          "amount": 6900
+        },
+        {
+          "sr_no": 23,
+          "name": "Activated carbon 900 iodine",
+          "specification": "250 kg",
+          "qty": 250,
+          "unit_rate": 68,
+          "amount": 17000
+        },
+        {
+          "sr_no": 24,
+          "name": "Bar Screen",
+          "specification": "as per the tank MS epoxy",
+          "qty": 1,
+          "unit_rate": 5500,
+          "amount": 5500
+        },
+        {
+          "sr_no": 25,
+          "name": "Air Grid",
+          "specification": "CT, FT & SHT",
+          "qty": 3,
+          "unit_rate": 6500,
+          "amount": 19500
+        },
+        {
+          "sr_no": 26,
+          "name": "Sludge Pump set",
+          "specification": "6.8 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 12680,
+          "amount": 25360
+        },
+        {
+          "sr_no": 27,
+          "name": "Erection Piping work",
+          "specification": "UPVC & MS",
+          "qty": 1,
+          "unit_rate": 25000,
+          "amount": 25000
+        },
+        {
+          "sr_no": 28,
+          "name": "Cabiling",
+          "specification": "Cable",
+          "qty": 1,
+          "unit_rate": 15000,
+          "amount": 15000
+        },
+        {
+          "sr_no": 29,
+          "name": "Commissioning",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 35000,
+          "amount": 35000
+        }
+      ]
+    },
+    "200": {
+      "total": 2144680,
+      "line_items": [
+        {
+          "sr_no": 1,
+          "name": "Sewage Transfer Pump",
+          "specification": "9.1 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 12680,
+          "amount": 25360
+        },
+        {
+          "sr_no": 2,
+          "name": "Return sludge pump",
+          "specification": "9.1 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 12680,
+          "amount": 25360
+        },
+        {
+          "sr_no": 3,
+          "name": "Air Blower",
+          "specification": "300 cum/hr @ 0.45 kg/cm2",
+          "qty": 2,
+          "unit_rate": 62000,
+          "amount": 124000
+        },
+        {
+          "sr_no": 4,
+          "name": "Motor for air blower",
+          "specification": "10 hp/1500 rpm",
+          "qty": 2,
+          "unit_rate": 17200,
+          "amount": 34400
+        },
+        {
+          "sr_no": 5,
+          "name": "Filter Feed Pump",
+          "specification": "9.1 cum/hr @ 35 m h",
+          "qty": 2,
+          "unit_rate": 14500,
+          "amount": 29000
+        },
+        {
+          "sr_no": 6,
+          "name": "Alum Dosing Pump",
+          "specification": "0-12 lph",
+          "qty": 1,
+          "unit_rate": 5600,
+          "amount": 5600
+        },
+        {
+          "sr_no": 7,
+          "name": "Alum Dosing tank",
+          "specification": "100 ltr",
+          "qty": 1,
+          "unit_rate": 1500,
+          "amount": 1500
+        },
+        {
+          "sr_no": 8,
+          "name": "Dual Media Filter",
+          "specification": "1.0 m dia x 1.5 m hos",
+          "qty": 1,
+          "unit_rate": 91500,
+          "amount": 91500
+        },
+        {
+          "sr_no": 9,
+          "name": "Activated carbon filter",
+          "specification": "1.0 m dia x 1.5 m hos",
+          "qty": 1,
+          "unit_rate": 91500,
+          "amount": 91500
+        },
+        {
+          "sr_no": 10,
+          "name": "Hypo chlorite pump",
+          "specification": "0-12 lph",
+          "qty": 1,
+          "unit_rate": 5600,
+          "amount": 5600
+        },
+        {
+          "sr_no": 11,
+          "name": "Hypo chlorite dosing tank",
+          "specification": "100 ltr",
+          "qty": 1,
+          "unit_rate": 1500,
+          "amount": 1500
+        },
+        {
+          "sr_no": 12,
+          "name": "Tube media",
+          "specification": "0.75 m ht",
+          "qty": 5,
+          "unit_rate": 8500,
+          "amount": 42500
+        },
+        {
+          "sr_no": 13,
+          "name": "MBBR",
+          "specification": null,
+          "qty": 12,
+          "unit_rate": 11500,
+          "amount": 138000
+        },
+        {
+          "sr_no": 14,
+          "name": "MCC PANEL",
+          "specification": "PLC based",
+          "qty": 1,
+          "unit_rate": 121000,
+          "amount": 121000
+        },
+        {
+          "sr_no": 15,
+          "name": "Inter connecting piping",
+          "specification": "UPVC",
+          "qty": 1,
+          "unit_rate": 75000,
+          "amount": 75000
+        },
+        {
+          "sr_no": 16,
+          "name": "Filter press",
+          "specification": "24\" x 24\" - 10 Nos Hand Pump",
+          "qty": 1,
+          "unit_rate": 120000,
+          "amount": 120000
+        },
+        {
+          "sr_no": 17,
+          "name": "Diiffuser membrane",
+          "specification": "90 mm dia x 1000 mm",
+          "qty": 14,
+          "unit_rate": 3500,
+          "amount": 49000
+        },
+        {
+          "sr_no": 18,
+          "name": "cabling",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 35000,
+          "amount": 35000
+        },
+        {
+          "sr_no": 19,
+          "name": "MS pipe line",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 55000,
+          "amount": 55000
+        },
+        {
+          "sr_no": 20,
+          "name": "water meter",
+          "specification": "1.5\" dia mech",
+          "qty": 1,
+          "unit_rate": 8200,
+          "amount": 8200
+        },
+        {
+          "sr_no": 21,
+          "name": "UF system",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 900000,
+          "amount": 900000
+        },
+        {
+          "sr_no": 22,
+          "name": "Sand media",
+          "specification": "1) Pebbles 1-3/4\" : 700 kg 2) Pebbles 1/2-3/4 : 700 kg  3) Pebbles 1/2-1/4\" : 250 kg    4) Core Silex : 250 kg          5) Fine Sand : 100 kg",
+          "qty": 2000,
+          "unit_rate": 5.75,
+          "amount": 11500
+        },
+        {
+          "sr_no": 23,
+          "name": "Activated carbon 900 iodine",
+          "specification": "250 kg",
+          "qty": 350,
+          "unit_rate": 68,
+          "amount": 23800
+        },
+        {
+          "sr_no": 24,
+          "name": "Bar Screen",
+          "specification": "as per the tank MS epoxy",
+          "qty": 1,
+          "unit_rate": 5500,
+          "amount": 5500
+        },
+        {
+          "sr_no": 25,
+          "name": "Air Grid",
+          "specification": "CT, FT & SHT",
+          "qty": 3,
+          "unit_rate": 6500,
+          "amount": 19500
+        },
+        {
+          "sr_no": 26,
+          "name": "Sludge Pump set",
+          "specification": "9.1 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 12680,
+          "amount": 25360
+        },
+        {
+          "sr_no": 27,
+          "name": "Erection Piping work",
+          "specification": "UPVC & MS",
+          "qty": 1,
+          "unit_rate": 25000,
+          "amount": 25000
+        },
+        {
+          "sr_no": 28,
+          "name": "Cabiling",
+          "specification": "Cable",
+          "qty": 1,
+          "unit_rate": 15000,
+          "amount": 15000
+        },
+        {
+          "sr_no": 29,
+          "name": "Commissioning",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 40000,
+          "amount": 40000
+        }
+      ]
+    },
+    "250": {
+      "total": 2322900,
+      "line_items": [
+        {
+          "sr_no": 1,
+          "name": "Sewage Transfer Pump",
+          "specification": "11.4 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 17700,
+          "amount": 35400
+        },
+        {
+          "sr_no": 2,
+          "name": "Return sludge pump",
+          "specification": "11.4 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 17700,
+          "amount": 35400
+        },
+        {
+          "sr_no": 3,
+          "name": "Air Blower",
+          "specification": "350 cum/hr @ 0.45 kg/cm2",
+          "qty": 2,
+          "unit_rate": 68000,
+          "amount": 136000
+        },
+        {
+          "sr_no": 4,
+          "name": "Motor for air blower",
+          "specification": "12.5 hp/1500 rpm",
+          "qty": 2,
+          "unit_rate": 27500,
+          "amount": 55000
+        },
+        {
+          "sr_no": 5,
+          "name": "Filter Feed Pump",
+          "specification": "11.4 cum/hr @ 35 m h",
+          "qty": 2,
+          "unit_rate": 14500,
+          "amount": 29000
+        },
+        {
+          "sr_no": 6,
+          "name": "Alum Dosing Pump",
+          "specification": "0-12 lph",
+          "qty": 1,
+          "unit_rate": 5600,
+          "amount": 5600
+        },
+        {
+          "sr_no": 7,
+          "name": "Alum Dosing tank",
+          "specification": "100 ltr",
+          "qty": 1,
+          "unit_rate": 1500,
+          "amount": 1500
+        },
+        {
+          "sr_no": 8,
+          "name": "Dual Media Filter",
+          "specification": "1.0 m dia x 1.5 m hos",
+          "qty": 1,
+          "unit_rate": 91500,
+          "amount": 91500
+        },
+        {
+          "sr_no": 9,
+          "name": "Activated carbon filter",
+          "specification": "1.0 m dia x 1.5 m hos",
+          "qty": 1,
+          "unit_rate": 91500,
+          "amount": 91500
+        },
+        {
+          "sr_no": 10,
+          "name": "Hypo chlorite pump",
+          "specification": "0-12 lph",
+          "qty": 1,
+          "unit_rate": 5600,
+          "amount": 5600
+        },
+        {
+          "sr_no": 11,
+          "name": "Hypo chlorite dosing tank",
+          "specification": "100 ltr",
+          "qty": 1,
+          "unit_rate": 1500,
+          "amount": 1500
+        },
+        {
+          "sr_no": 12,
+          "name": "Tube media",
+          "specification": "0.75 m ht",
+          "qty": 7,
+          "unit_rate": 8500,
+          "amount": 59500
+        },
+        {
+          "sr_no": 13,
+          "name": "MBBR",
+          "specification": null,
+          "qty": 15,
+          "unit_rate": 11500,
+          "amount": 172500
+        },
+        {
+          "sr_no": 14,
+          "name": "MCC PANEL",
+          "specification": "PLC based",
+          "qty": 1,
+          "unit_rate": 126000,
+          "amount": 126000
+        },
+        {
+          "sr_no": 15,
+          "name": "Inter connecting piping",
+          "specification": "UPVC",
+          "qty": 1,
+          "unit_rate": 80000,
+          "amount": 80000
+        },
+        {
+          "sr_no": 16,
+          "name": "Filter press",
+          "specification": "24\" x 24\" - 16 Nos Hand Pump",
+          "qty": 1,
+          "unit_rate": 145000,
+          "amount": 145000
+        },
+        {
+          "sr_no": 17,
+          "name": "Diiffuser membrane",
+          "specification": "90 mm dia x 1000 mm",
+          "qty": 18,
+          "unit_rate": 3500,
+          "amount": 63000
+        },
+        {
+          "sr_no": 18,
+          "name": "cabling",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 40000,
+          "amount": 40000
+        },
+        {
+          "sr_no": 19,
+          "name": "MS pipe line",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 55000,
+          "amount": 55000
+        },
+        {
+          "sr_no": 20,
+          "name": "water meter",
+          "specification": "1.5\" dia mech",
+          "qty": 1,
+          "unit_rate": 8200,
+          "amount": 8200
+        },
+        {
+          "sr_no": 21,
+          "name": "UF system",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 900000,
+          "amount": 900000
+        },
+        {
+          "sr_no": 22,
+          "name": "Sand media",
+          "specification": "1) Pebbles 1-3/4\" : 700 kg 2) Pebbles 1/2-3/4 : 700 kg  3) Pebbles 1/2-1/4\" : 250 kg    4) Core Silex : 250 kg          5) Fine Sand : 100 kg",
+          "qty": 2000,
+          "unit_rate": 5.75,
+          "amount": 11500
+        },
+        {
+          "sr_no": 23,
+          "name": "Activated carbon 900 iodine",
+          "specification": "250 kg",
+          "qty": 350,
+          "unit_rate": 68,
+          "amount": 23800
+        },
+        {
+          "sr_no": 24,
+          "name": "Bar Screen",
+          "specification": "as per the tank MS epoxy",
+          "qty": 1,
+          "unit_rate": 5500,
+          "amount": 5500
+        },
+        {
+          "sr_no": 25,
+          "name": "Air Grid",
+          "specification": "CT, FT & SHT",
+          "qty": 3,
+          "unit_rate": 6500,
+          "amount": 19500
+        },
+        {
+          "sr_no": 26,
+          "name": "Sludge Pump set",
+          "specification": "11.4 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 17700,
+          "amount": 35400
+        },
+        {
+          "sr_no": 27,
+          "name": "Erection Piping work",
+          "specification": "UPVC & MS",
+          "qty": 1,
+          "unit_rate": 30000,
+          "amount": 30000
+        },
+        {
+          "sr_no": 28,
+          "name": "Cabiling",
+          "specification": "Cable",
+          "qty": 1,
+          "unit_rate": 15000,
+          "amount": 15000
+        },
+        {
+          "sr_no": 29,
+          "name": "Commissioning",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 45000,
+          "amount": 45000
+        }
+      ]
+    },
+    "300": {
+      "total": 2846237.5,
+      "line_items": [
+        {
+          "sr_no": 1,
+          "name": "Sewage Transfer Pump",
+          "specification": "13.6 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 17700,
+          "amount": 35400
+        },
+        {
+          "sr_no": 2,
+          "name": "Return sludge pump",
+          "specification": "13.6 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 17700,
+          "amount": 35400
+        },
+        {
+          "sr_no": 3,
+          "name": "Air Blower",
+          "specification": "385 cum/hr @ 0.45 kg/cm2",
+          "qty": 2,
+          "unit_rate": 68000,
+          "amount": 136000
+        },
+        {
+          "sr_no": 4,
+          "name": "Motor for air blower",
+          "specification": "12.5 hp/1500 rpm",
+          "qty": 2,
+          "unit_rate": 27500,
+          "amount": 55000
+        },
+        {
+          "sr_no": 5,
+          "name": "Filter Feed Pump",
+          "specification": "13.6 cum/hr @ 35 m h",
+          "qty": 2,
+          "unit_rate": 18900,
+          "amount": 37800
+        },
+        {
+          "sr_no": 6,
+          "name": "Alum Dosing Pump",
+          "specification": "0-12 lph",
+          "qty": 1,
+          "unit_rate": 5600,
+          "amount": 5600
+        },
+        {
+          "sr_no": 7,
+          "name": "Alum Dosing tank",
+          "specification": "100 ltr",
+          "qty": 1,
+          "unit_rate": 1500,
+          "amount": 1500
+        },
+        {
+          "sr_no": 8,
+          "name": "Dual Media Filter",
+          "specification": "1.2 m dia x 1.5 m hos",
+          "qty": 1,
+          "unit_rate": 133000,
+          "amount": 133000
+        },
+        {
+          "sr_no": 9,
+          "name": "Activated carbon filter",
+          "specification": "1.2 m dia x 1.5 m hos",
+          "qty": 1,
+          "unit_rate": 133000,
+          "amount": 133000
+        },
+        {
+          "sr_no": 10,
+          "name": "Hypo chlorite pump",
+          "specification": "0-12 lph",
+          "qty": 1,
+          "unit_rate": 5600,
+          "amount": 5600
+        },
+        {
+          "sr_no": 11,
+          "name": "Hypo chlorite dosing tank",
+          "specification": "100 ltr",
+          "qty": 1,
+          "unit_rate": 1500,
+          "amount": 1500
+        },
+        {
+          "sr_no": 12,
+          "name": "Tube media",
+          "specification": "0.75 m ht",
+          "qty": 9.5,
+          "unit_rate": 8500,
+          "amount": 80750
+        },
+        {
+          "sr_no": 13,
+          "name": "MBBR",
+          "specification": null,
+          "qty": 18,
+          "unit_rate": 11500,
+          "amount": 207000
+        },
+        {
+          "sr_no": 14,
+          "name": "MCC PANEL",
+          "specification": "PLC based",
+          "qty": 1,
+          "unit_rate": 126000,
+          "amount": 126000
+        },
+        {
+          "sr_no": 15,
+          "name": "Inter connecting piping",
+          "specification": "UPVC",
+          "qty": 1,
+          "unit_rate": 95000,
+          "amount": 95000
+        },
+        {
+          "sr_no": 16,
+          "name": "Filter press",
+          "specification": "24\" x 24\" - 19 Nos Motorised",
+          "qty": 1,
+          "unit_rate": 190000,
+          "amount": 190000
+        },
+        {
+          "sr_no": 17,
+          "name": "Diiffuser membrane",
+          "specification": "90 mm dia x 1000 mm",
+          "qty": 20,
+          "unit_rate": 3500,
+          "amount": 70000
+        },
+        {
+          "sr_no": 18,
+          "name": "cabling",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 45000,
+          "amount": 45000
+        },
+        {
+          "sr_no": 19,
+          "name": "MS pipe line",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 65000,
+          "amount": 65000
+        },
+        {
+          "sr_no": 20,
+          "name": "water meter",
+          "specification": "3\" dia mech",
+          "qty": 1,
+          "unit_rate": 15500,
+          "amount": 15500
+        },
+        {
+          "sr_no": 21,
+          "name": "UF system",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 1150000,
+          "amount": 1150000
+        },
+        {
+          "sr_no": 22,
+          "name": "Sand media",
+          "specification": "1) Pebbles 1-3/4\" : 1000 kg  2) Pebbles 1/2-3/4 : 1000 kg                                      3) Pebbles 1/2-1/4\" : 350 kg    4) Core Silex : 350 kg          5) Fine Sand : 150 kg",
+          "qty": 2850,
+          "unit_rate": 5.75,
+          "amount": 16387.5
+        },
+        {
+          "sr_no": 23,
+          "name": "Activated carbon 900 iodine",
+          "specification": "550 kg",
+          "qty": 550,
+          "unit_rate": 68,
+          "amount": 37400
+        },
+        {
+          "sr_no": 24,
+          "name": "Bar Screen",
+          "specification": "as per the tank MS epoxy",
+          "qty": 1,
+          "unit_rate": 7500,
+          "amount": 7500
+        },
+        {
+          "sr_no": 25,
+          "name": "Air Grid",
+          "specification": "CT, FT & SHT",
+          "qty": 3,
+          "unit_rate": 7500,
+          "amount": 22500
+        },
+        {
+          "sr_no": 26,
+          "name": "Sludge Pump set",
+          "specification": "13.6 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 17700,
+          "amount": 35400
+        },
+        {
+          "sr_no": 27,
+          "name": "Erection Piping work",
+          "specification": "UPVC & MS",
+          "qty": 1,
+          "unit_rate": 35000,
+          "amount": 35000
+        },
+        {
+          "sr_no": 28,
+          "name": "Cabiling",
+          "specification": "Cable",
+          "qty": 1,
+          "unit_rate": 20000,
+          "amount": 20000
+        },
+        {
+          "sr_no": 29,
+          "name": "Commissioning",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 48000,
+          "amount": 48000
+        }
+      ]
+    },
+    "350": {
+      "total": 2930887.5,
+      "line_items": [
+        {
+          "sr_no": 1,
+          "name": "Sewage Transfer Pump",
+          "specification": "16 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 17700,
+          "amount": 35400
+        },
+        {
+          "sr_no": 2,
+          "name": "Return sludge pump",
+          "specification": "16 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 17700,
+          "amount": 35400
+        },
+        {
+          "sr_no": 3,
+          "name": "Air Blower",
+          "specification": "430 cum/hr @ 0.45 kg/cm2",
+          "qty": 2,
+          "unit_rate": 68000,
+          "amount": 136000
+        },
+        {
+          "sr_no": 4,
+          "name": "Motor for air blower",
+          "specification": "15 hp/1500 rpm",
+          "qty": 2,
+          "unit_rate": 29200,
+          "amount": 58400
+        },
+        {
+          "sr_no": 5,
+          "name": "Filter Feed Pump",
+          "specification": "16 cum/hr @ 35 m h",
+          "qty": 2,
+          "unit_rate": 18900,
+          "amount": 37800
+        },
+        {
+          "sr_no": 6,
+          "name": "Alum Dosing Pump",
+          "specification": "0-12 lph",
+          "qty": 1,
+          "unit_rate": 5600,
+          "amount": 5600
+        },
+        {
+          "sr_no": 7,
+          "name": "Alum Dosing tank",
+          "specification": "100 ltr",
+          "qty": 1,
+          "unit_rate": 1500,
+          "amount": 1500
+        },
+        {
+          "sr_no": 8,
+          "name": "Dual Media Filter",
+          "specification": "1.2 m dia x 1.5 m hos",
+          "qty": 1,
+          "unit_rate": 133000,
+          "amount": 133000
+        },
+        {
+          "sr_no": 9,
+          "name": "Activated carbon filter",
+          "specification": "1.2 m dia x 1.5 m hos",
+          "qty": 1,
+          "unit_rate": 133000,
+          "amount": 133000
+        },
+        {
+          "sr_no": 10,
+          "name": "Hypo chlorite pump",
+          "specification": "0-12 lph",
+          "qty": 1,
+          "unit_rate": 5600,
+          "amount": 5600
+        },
+        {
+          "sr_no": 11,
+          "name": "Hypo chlorite dosing tank",
+          "specification": "100 ltr",
+          "qty": 1,
+          "unit_rate": 1500,
+          "amount": 1500
+        },
+        {
+          "sr_no": 12,
+          "name": "Tube media",
+          "specification": "0.75 m ht",
+          "qty": 11,
+          "unit_rate": 8500,
+          "amount": 93500
+        },
+        {
+          "sr_no": 13,
+          "name": "MBBR",
+          "specification": null,
+          "qty": 21,
+          "unit_rate": 11500,
+          "amount": 241500
+        },
+        {
+          "sr_no": 14,
+          "name": "MCC PANEL",
+          "specification": "PLC based",
+          "qty": 1,
+          "unit_rate": 134000,
+          "amount": 134000
+        },
+        {
+          "sr_no": 15,
+          "name": "Inter connecting piping",
+          "specification": "UPVC",
+          "qty": 1,
+          "unit_rate": 95000,
+          "amount": 95000
+        },
+        {
+          "sr_no": 16,
+          "name": "Filter press",
+          "specification": "24\" x 24\" - 21 Nos Motorised",
+          "qty": 1,
+          "unit_rate": 195000,
+          "amount": 195000
+        },
+        {
+          "sr_no": 17,
+          "name": "Diiffuser membrane",
+          "specification": "90 mm dia x 1000 mm",
+          "qty": 26,
+          "unit_rate": 3500,
+          "amount": 91000
+        },
+        {
+          "sr_no": 18,
+          "name": "cabling",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 45000,
+          "amount": 45000
+        },
+        {
+          "sr_no": 19,
+          "name": "MS pipe line",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 65000,
+          "amount": 65000
+        },
+        {
+          "sr_no": 20,
+          "name": "water meter",
+          "specification": "3\" dia mech",
+          "qty": 1,
+          "unit_rate": 15500,
+          "amount": 15500
+        },
+        {
+          "sr_no": 21,
+          "name": "UF system",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 1150000,
+          "amount": 1150000
+        },
+        {
+          "sr_no": 22,
+          "name": "Sand media",
+          "specification": "1) Pebbles 1-3/4\" : 1000 kg  2) Pebbles 1/2-3/4 : 1000 kg                                      3) Pebbles 1/2-1/4\" : 350 kg    4) Core Silex : 350 kg          5) Fine Sand : 150 kg",
+          "qty": 2850,
+          "unit_rate": 5.75,
+          "amount": 16387.5
+        },
+        {
+          "sr_no": 23,
+          "name": "Activated carbon 900 iodine",
+          "specification": "550 kg",
+          "qty": 550,
+          "unit_rate": 68,
+          "amount": 37400
+        },
+        {
+          "sr_no": 24,
+          "name": "Bar Screen",
+          "specification": "as per the tank MS epoxy",
+          "qty": 1,
+          "unit_rate": 7500,
+          "amount": 7500
+        },
+        {
+          "sr_no": 25,
+          "name": "Air Grid",
+          "specification": "CT, FT & SHT",
+          "qty": 3,
+          "unit_rate": 7500,
+          "amount": 22500
+        },
+        {
+          "sr_no": 26,
+          "name": "Sludge Pump set",
+          "specification": "16 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 17700,
+          "amount": 35400
+        },
+        {
+          "sr_no": 27,
+          "name": "Erection Piping work",
+          "specification": "UPVC & MS",
+          "qty": 1,
+          "unit_rate": 35000,
+          "amount": 35000
+        },
+        {
+          "sr_no": 28,
+          "name": "Cabiling",
+          "specification": "Cable",
+          "qty": 1,
+          "unit_rate": 20000,
+          "amount": 20000
+        },
+        {
+          "sr_no": 29,
+          "name": "Commissioning",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 48000,
+          "amount": 48000
+        }
+      ]
+    },
+    "400": {
+      "total": 3440037.5,
+      "line_items": [
+        {
+          "sr_no": 1,
+          "name": "Sewage Transfer Pump",
+          "specification": "18.2 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 17700,
+          "amount": 35400
+        },
+        {
+          "sr_no": 2,
+          "name": "Return sludge pump",
+          "specification": "18.2 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 17700,
+          "amount": 35400
+        },
+        {
+          "sr_no": 3,
+          "name": "Air Blower",
+          "specification": "500 cum/hr @ 0.45 kg/cm2",
+          "qty": 2,
+          "unit_rate": 115000,
+          "amount": 230000
+        },
+        {
+          "sr_no": 4,
+          "name": "Motor for air blower",
+          "specification": "20 hp/1500 rpm",
+          "qty": 2,
+          "unit_rate": 35500,
+          "amount": 71000
+        },
+        {
+          "sr_no": 5,
+          "name": "Filter Feed Pump",
+          "specification": "18.2 cum/hr @ 35 m h",
+          "qty": 2,
+          "unit_rate": 18900,
+          "amount": 37800
+        },
+        {
+          "sr_no": 6,
+          "name": "Alum Dosing Pump",
+          "specification": "0-12 lph",
+          "qty": 1,
+          "unit_rate": 5600,
+          "amount": 5600
+        },
+        {
+          "sr_no": 7,
+          "name": "Alum Dosing tank",
+          "specification": "100 ltr",
+          "qty": 1,
+          "unit_rate": 1500,
+          "amount": 1500
+        },
+        {
+          "sr_no": 8,
+          "name": "Dual Media Filter",
+          "specification": "1.4 m dia x 1.85 m hos",
+          "qty": 1,
+          "unit_rate": 155000,
+          "amount": 155000
+        },
+        {
+          "sr_no": 9,
+          "name": "Activated carbon filter",
+          "specification": "1.4 m dia x 1.85 m hos",
+          "qty": 1,
+          "unit_rate": 155000,
+          "amount": 155000
+        },
+        {
+          "sr_no": 10,
+          "name": "Hypo chlorite pump",
+          "specification": "0-12 lph",
+          "qty": 1,
+          "unit_rate": 5600,
+          "amount": 5600
+        },
+        {
+          "sr_no": 11,
+          "name": "Hypo chlorite dosing tank",
+          "specification": "100 ltr",
+          "qty": 1,
+          "unit_rate": 1500,
+          "amount": 1500
+        },
+        {
+          "sr_no": 12,
+          "name": "Tube media",
+          "specification": "0.75 m ht",
+          "qty": 13.5,
+          "unit_rate": 8500,
+          "amount": 114750
+        },
+        {
+          "sr_no": 13,
+          "name": "MBBR",
+          "specification": null,
+          "qty": 24,
+          "unit_rate": 11500,
+          "amount": 276000
+        },
+        {
+          "sr_no": 14,
+          "name": "MCC PANEL",
+          "specification": "PLC based",
+          "qty": 1,
+          "unit_rate": 143000,
+          "amount": 143000
+        },
+        {
+          "sr_no": 15,
+          "name": "Inter connecting piping",
+          "specification": "UPVC",
+          "qty": 1,
+          "unit_rate": 95000,
+          "amount": 95000
+        },
+        {
+          "sr_no": 16,
+          "name": "Filter press",
+          "specification": "24\" x 24\" - 26 Nos Motorised",
+          "qty": 1,
+          "unit_rate": 205000,
+          "amount": 205000
+        },
+        {
+          "sr_no": 17,
+          "name": "Diiffuser membrane",
+          "specification": "90 mm dia x 1000 mm",
+          "qty": 30,
+          "unit_rate": 3500,
+          "amount": 105000
+        },
+        {
+          "sr_no": 18,
+          "name": "cabling",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 45000,
+          "amount": 45000
+        },
+        {
+          "sr_no": 19,
+          "name": "MS pipe line",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 75000,
+          "amount": 75000
+        },
+        {
+          "sr_no": 20,
+          "name": "water meter",
+          "specification": "3\" dia mech",
+          "qty": 1,
+          "unit_rate": 15500,
+          "amount": 15500
+        },
+        {
+          "sr_no": 21,
+          "name": "UF system",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 1390000,
+          "amount": 1390000
+        },
+        {
+          "sr_no": 22,
+          "name": "Sand media",
+          "specification": "1) Pebbles 1-3/4\" : 1400 kg  2) Pebbles 1/2-3/4 : 1400 kg                                      3) Pebbles 1/2-1/4\" : 500 kg    4) Core Silex : 500 kg          5) Fine Sand : 250 kg",
+          "qty": 4050,
+          "unit_rate": 5.75,
+          "amount": 23287.5
+        },
+        {
+          "sr_no": 23,
+          "name": "Activated carbon 900 iodine",
+          "specification": "650 kg",
+          "qty": 650,
+          "unit_rate": 68,
+          "amount": 44200
+        },
+        {
+          "sr_no": 24,
+          "name": "Bar Screen",
+          "specification": "as per the tank MS epoxy",
+          "qty": 1,
+          "unit_rate": 8500,
+          "amount": 8500
+        },
+        {
+          "sr_no": 25,
+          "name": "Air Grid",
+          "specification": "CT, FT & SHT",
+          "qty": 3,
+          "unit_rate": 9200,
+          "amount": 27600
+        },
+        {
+          "sr_no": 26,
+          "name": "Sludge Pump set",
+          "specification": "18.2 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 17700,
+          "amount": 35400
+        },
+        {
+          "sr_no": 27,
+          "name": "Erection Piping work",
+          "specification": "UPVC & MS",
+          "qty": 1,
+          "unit_rate": 35000,
+          "amount": 35000
+        },
+        {
+          "sr_no": 28,
+          "name": "Cabiling",
+          "specification": "Cable",
+          "qty": 1,
+          "unit_rate": 20000,
+          "amount": 20000
+        },
+        {
+          "sr_no": 29,
+          "name": "Commissioning",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 48000,
+          "amount": 48000
+        }
+      ]
+    },
+    "450": {
+      "total": 3602547.5,
+      "line_items": [
+        {
+          "sr_no": 1,
+          "name": "Sewage Transfer Pump",
+          "specification": "21 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 20500,
+          "amount": 41000
+        },
+        {
+          "sr_no": 2,
+          "name": "Return sludge pump",
+          "specification": "21 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 20500,
+          "amount": 41000
+        },
+        {
+          "sr_no": 3,
+          "name": "Air Blower",
+          "specification": "570 cum/hr @ 0.45 kg/cm2",
+          "qty": 2,
+          "unit_rate": 115000,
+          "amount": 230000
+        },
+        {
+          "sr_no": 4,
+          "name": "Motor for air blower",
+          "specification": "20 hp/1500 rpm",
+          "qty": 2,
+          "unit_rate": 35500,
+          "amount": 71000
+        },
+        {
+          "sr_no": 5,
+          "name": "Filter Feed Pump",
+          "specification": "21 cum/hr @ 35 m h",
+          "qty": 2,
+          "unit_rate": 18900,
+          "amount": 37800
+        },
+        {
+          "sr_no": 6,
+          "name": "Alum Dosing Pump",
+          "specification": "0-20 lph",
+          "qty": 1,
+          "unit_rate": 18700,
+          "amount": 18700
+        },
+        {
+          "sr_no": 7,
+          "name": "Alum Dosing tank",
+          "specification": "100 ltr",
+          "qty": 1,
+          "unit_rate": 2200,
+          "amount": 2200
+        },
+        {
+          "sr_no": 8,
+          "name": "Dual Media Filter",
+          "specification": "1.4 m dia x 1.85 m hos",
+          "qty": 1,
+          "unit_rate": 155000,
+          "amount": 155000
+        },
+        {
+          "sr_no": 9,
+          "name": "Activated carbon filter",
+          "specification": "1.4 m dia x 1.85 m hos",
+          "qty": 1,
+          "unit_rate": 155000,
+          "amount": 155000
+        },
+        {
+          "sr_no": 10,
+          "name": "Hypo chlorite pump",
+          "specification": "0-20 lph",
+          "qty": 1,
+          "unit_rate": 18700,
+          "amount": 18700
+        },
+        {
+          "sr_no": 11,
+          "name": "Hypo chlorite dosing tank",
+          "specification": "100 ltr",
+          "qty": 1,
+          "unit_rate": 2200,
+          "amount": 2200
+        },
+        {
+          "sr_no": 12,
+          "name": "Tube media",
+          "specification": "0.75 m ht",
+          "qty": 15,
+          "unit_rate": 8500,
+          "amount": 127500
+        },
+        {
+          "sr_no": 13,
+          "name": "MBBR",
+          "specification": null,
+          "qty": 27,
+          "unit_rate": 11500,
+          "amount": 310500
+        },
+        {
+          "sr_no": 14,
+          "name": "MCC PANEL",
+          "specification": "PLC based",
+          "qty": 1,
+          "unit_rate": 143000,
+          "amount": 143000
+        },
+        {
+          "sr_no": 15,
+          "name": "Inter connecting piping",
+          "specification": "UPVC",
+          "qty": 1,
+          "unit_rate": 95000,
+          "amount": 95000
+        },
+        {
+          "sr_no": 16,
+          "name": "Filter press",
+          "specification": "32\" x32\" - 13 Nos Motorised",
+          "qty": 1,
+          "unit_rate": 265000,
+          "amount": 265000
+        },
+        {
+          "sr_no": 17,
+          "name": "Diiffuser membrane",
+          "specification": "90 mm dia x 1000 mm",
+          "qty": 33,
+          "unit_rate": 3500,
+          "amount": 115500
+        },
+        {
+          "sr_no": 18,
+          "name": "cabling",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 45000,
+          "amount": 45000
+        },
+        {
+          "sr_no": 19,
+          "name": "MS pipe line",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 85000,
+          "amount": 85000
+        },
+        {
+          "sr_no": 20,
+          "name": "water meter",
+          "specification": "3\" dia mech",
+          "qty": 1,
+          "unit_rate": 15500,
+          "amount": 15500
+        },
+        {
+          "sr_no": 21,
+          "name": "UF system",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 1390000,
+          "amount": 1390000
+        },
+        {
+          "sr_no": 22,
+          "name": "Sand media",
+          "specification": "1) Pebbles 1-3/4\" : 1400 kg  2) Pebbles 1/2-3/4 : 1400 kg                                      3) Pebbles 1/2-1/4\" : 500 kg    4) Core Silex : 500 kg          5) Fine Sand : 250 kg",
+          "qty": 4050,
+          "unit_rate": 5.75,
+          "amount": 23287.5
+        },
+        {
+          "sr_no": 23,
+          "name": "Activated carbon 900 iodine",
+          "specification": "650 kg",
+          "qty": 650,
+          "unit_rate": 68,
+          "amount": 44200
+        },
+        {
+          "sr_no": 24,
+          "name": "Bar Screen",
+          "specification": "as per the tank MS epoxy",
+          "qty": 1,
+          "unit_rate": 9500,
+          "amount": 9500
+        },
+        {
+          "sr_no": 25,
+          "name": "Air Grid",
+          "specification": "CT, FT & SHT",
+          "qty": 3,
+          "unit_rate": 9200,
+          "amount": 27600
+        },
+        {
+          "sr_no": 26,
+          "name": "Sludge Pump set",
+          "specification": "21 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 12680,
+          "amount": 25360
+        },
+        {
+          "sr_no": 27,
+          "name": "Erection Piping work",
+          "specification": "UPVC & MS",
+          "qty": 1,
+          "unit_rate": 40000,
+          "amount": 40000
+        },
+        {
+          "sr_no": 28,
+          "name": "Cabiling",
+          "specification": "Cable",
+          "qty": 1,
+          "unit_rate": 20000,
+          "amount": 20000
+        },
+        {
+          "sr_no": 29,
+          "name": "Commissioning",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 48000,
+          "amount": 48000
+        }
+      ]
+    },
+    "500": {
+      "total": 4191950,
+      "line_items": [
+        {
+          "sr_no": 1,
+          "name": "Sewage Transfer Pump",
+          "specification": "23 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 20500,
+          "amount": 41000
+        },
+        {
+          "sr_no": 2,
+          "name": "Return sludge pump",
+          "specification": "23 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 20500,
+          "amount": 41000
+        },
+        {
+          "sr_no": 3,
+          "name": "Air Blower",
+          "specification": "625 cum/hr @ 0.45 kg/cm2",
+          "qty": 2,
+          "unit_rate": 115000,
+          "amount": 230000
+        },
+        {
+          "sr_no": 4,
+          "name": "Motor for air blower",
+          "specification": "20 hp/1500 rpm",
+          "qty": 2,
+          "unit_rate": 35500,
+          "amount": 71000
+        },
+        {
+          "sr_no": 5,
+          "name": "Filter Feed Pump",
+          "specification": "23 cum/hr @ 35 m h",
+          "qty": 2,
+          "unit_rate": 25500,
+          "amount": 51000
+        },
+        {
+          "sr_no": 6,
+          "name": "Alum Dosing Pump",
+          "specification": "0-20 lph",
+          "qty": 1,
+          "unit_rate": 18700,
+          "amount": 18700
+        },
+        {
+          "sr_no": 7,
+          "name": "Alum Dosing tank",
+          "specification": "100 ltr",
+          "qty": 1,
+          "unit_rate": 2200,
+          "amount": 2200
+        },
+        {
+          "sr_no": 8,
+          "name": "Dual Media Filter",
+          "specification": "1.5 m dia x 1.85 m hos",
+          "qty": 1,
+          "unit_rate": 165000,
+          "amount": 165000
+        },
+        {
+          "sr_no": 9,
+          "name": "Activated carbon filter",
+          "specification": "1.5 m dia x 1.85 m hos",
+          "qty": 1,
+          "unit_rate": 165000,
+          "amount": 165000
+        },
+        {
+          "sr_no": 10,
+          "name": "Hypo chlorite pump",
+          "specification": "0-20 lph",
+          "qty": 1,
+          "unit_rate": 18700,
+          "amount": 18700
+        },
+        {
+          "sr_no": 11,
+          "name": "Hypo chlorite dosing tank",
+          "specification": "100 ltr",
+          "qty": 1,
+          "unit_rate": 2200,
+          "amount": 2200
+        },
+        {
+          "sr_no": 12,
+          "name": "Tube media",
+          "specification": "0.75 m ht",
+          "qty": 18,
+          "unit_rate": 8500,
+          "amount": 153000
+        },
+        {
+          "sr_no": 13,
+          "name": "MBBR",
+          "specification": null,
+          "qty": 30,
+          "unit_rate": 11500,
+          "amount": 345000
+        },
+        {
+          "sr_no": 14,
+          "name": "MCC PANEL",
+          "specification": "PLC based",
+          "qty": 1,
+          "unit_rate": 144000,
+          "amount": 144000
+        },
+        {
+          "sr_no": 15,
+          "name": "Inter connecting piping",
+          "specification": "UPVC",
+          "qty": 1,
+          "unit_rate": 110000,
+          "amount": 110000
+        },
+        {
+          "sr_no": 16,
+          "name": "Filter press",
+          "specification": "32\" x32\" - 15 Nos Motorised",
+          "qty": 1,
+          "unit_rate": 275000,
+          "amount": 275000
+        },
+        {
+          "sr_no": 17,
+          "name": "Diiffuser membrane",
+          "specification": "90 mm dia x 1000 mm",
+          "qty": 36,
+          "unit_rate": 3500,
+          "amount": 126000
+        },
+        {
+          "sr_no": 18,
+          "name": "cabling",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 55000,
+          "amount": 55000
+        },
+        {
+          "sr_no": 19,
+          "name": "MS pipe line",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 95000,
+          "amount": 95000
+        },
+        {
+          "sr_no": 20,
+          "name": "water meter",
+          "specification": "3\" dia mech",
+          "qty": 1,
+          "unit_rate": 15500,
+          "amount": 15500
+        },
+        {
+          "sr_no": 21,
+          "name": "UF system",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 1775000,
+          "amount": 1775000
+        },
+        {
+          "sr_no": 22,
+          "name": "Sand media",
+          "specification": "1) Pebbles 1-3/4\" : 2000 kg  2) Pebbles 1/2-3/4 : 2000 kg                                      3) Pebbles 1/2-1/4\" : 550 kg    4) Core Silex : 550 kg          5) Fine Sand : 300 kg",
+          "qty": 5400,
+          "unit_rate": 5.75,
+          "amount": 31050
+        },
+        {
+          "sr_no": 23,
+          "name": "Activated carbon 900 iodine",
+          "specification": "700 kg",
+          "qty": 700,
+          "unit_rate": 68,
+          "amount": 47600
+        },
+        {
+          "sr_no": 24,
+          "name": "Bar Screen",
+          "specification": "as per the tank MS epoxy",
+          "qty": 1,
+          "unit_rate": 12000,
+          "amount": 12000
+        },
+        {
+          "sr_no": 25,
+          "name": "Air Grid",
+          "specification": "CT, FT & SHT",
+          "qty": 3,
+          "unit_rate": 12000,
+          "amount": 36000
+        },
+        {
+          "sr_no": 26,
+          "name": "Sludge Pump set",
+          "specification": "23 cum/hr @ 12 m h",
+          "qty": 2,
+          "unit_rate": 20500,
+          "amount": 41000
+        },
+        {
+          "sr_no": 27,
+          "name": "Erection Piping work",
+          "specification": "UPVC & MS",
+          "qty": 1,
+          "unit_rate": 45000,
+          "amount": 45000
+        },
+        {
+          "sr_no": 28,
+          "name": "Cabiling",
+          "specification": "Cable",
+          "qty": 1,
+          "unit_rate": 25000,
+          "amount": 25000
+        },
+        {
+          "sr_no": 29,
+          "name": "Commissioning",
+          "specification": null,
+          "qty": 1,
+          "unit_rate": 55000,
+          "amount": 55000
+        }
+      ]
+    }
+  }
+}
