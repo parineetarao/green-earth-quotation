@@ -7,13 +7,11 @@ on this page emails a customer without the confirmation dialog below --
 that's a CLAUDE.md non-negotiable, not a UI nicety.
 """
 
-from datetime import datetime
-
 import streamlit as st
 
 from lib import api_client, theme, ui
 from lib.api_client import APIError
-from lib.format import capacity_kld, quotation_number
+from lib.format import capacity_kld, format_datetime, now_ist_str, quotation_number
 
 theme.page_header("Review Queue", "Draft quotations awaiting review")
 
@@ -23,18 +21,14 @@ with header_right:
     with r1:
         st.markdown(
             f'<div class="ge-muted" style="text-align:right;padding-top:8px;">'
-            f'Last refreshed: {st.session_state.get("rq_last_refresh", datetime.now().strftime("%d %b %Y, %I:%M %p"))}'
+            f"Last refreshed: {now_ist_str()}"
             f"</div>",
             unsafe_allow_html=True,
         )
     with r2:
         if st.button("", icon=":material/refresh:", key="rq-refresh"):
             api_client.clear_all_caches()
-            st.session_state["rq_last_refresh"] = datetime.now().strftime("%d %b %Y, %I:%M %p")
             st.rerun()
-
-if "rq_last_refresh" not in st.session_state:
-    st.session_state["rq_last_refresh"] = datetime.now().strftime("%d %b %Y, %I:%M %p")
 
 try:
     quotations = [q for q in api_client.list_quotations() if q["status"] == "draft"]
@@ -109,8 +103,8 @@ page_items, meta = ui.paginate(quotations_sorted, page_size=5, key="review_queue
 if not page_items:
     st.info("No draft quotations right now -- the review queue is empty.")
 
-col_widths = [1.1, 1.5, 0.9, 1.3, 1.1, 1.0, 2.3]
-headers = ["Quotation #", "Customer", "Capacity", "Price (₹)", "In Verified Range", "Status", "Actions"]
+col_widths = [1.1, 1.4, 0.8, 1.2, 1.0, 0.9, 1.3, 2.1]
+headers = ["Quotation #", "Customer", "Capacity", "Price (₹)", "In Verified Range", "Status", "Created At", "Actions"]
 header_cols = st.columns(col_widths)
 for col, label in zip(header_cols, headers):
     col.markdown(f'<span class="ge-muted"><b>{label}</b></span>', unsafe_allow_html=True)
@@ -136,8 +130,9 @@ for q in page_items:
 
     cols[4].markdown(theme.verified_range_badge(q["in_verified_range"]), unsafe_allow_html=True)
     cols[5].markdown(theme.quotation_status_badge(q["status"]), unsafe_allow_html=True)
+    cols[6].write(format_datetime(q["created_at"]))
 
-    with cols[6]:
+    with cols[7]:
         if q["in_verified_range"]:
             a1, a2 = st.columns(2)
             with a1:

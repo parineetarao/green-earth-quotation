@@ -6,6 +6,9 @@ so there's nothing here to keep in sync with the database.
 """
 
 from datetime import datetime
+from zoneinfo import ZoneInfo
+
+IST = ZoneInfo("Asia/Kolkata")
 
 
 def quotation_number(quotation: dict) -> str:
@@ -31,4 +34,16 @@ def capacity_kld(value: float | None) -> str:
 
 
 def format_datetime(iso_string: str) -> str:
-    return datetime.fromisoformat(iso_string).strftime("%d %b %Y, %I:%M %p")
+    """
+    created_at comes from the API as a UTC-offset ISO string (the DB column
+    is DateTime(timezone=True), Postgres func.now() -- see database/models.py).
+    Convert to IST before formatting, since the company and its users are
+    all in Mumbai -- a bare .strftime() would print raw UTC as if it were
+    local time, off by 5:30.
+    """
+    parsed = datetime.fromisoformat(iso_string)
+    return parsed.astimezone(IST).strftime("%d %b %Y, %I:%M %p")
+
+
+def now_ist_str() -> str:
+    return datetime.now(IST).strftime("%d %b %Y, %I:%M %p")
