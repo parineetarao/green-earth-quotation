@@ -28,19 +28,7 @@ ORM: SQLAlchemy
 Document Generation: python-docx, ReportLab
 Email Service: Postmark
 Deployment: Render (API) + Streamlit Cloud
-Project Structure
-app/
-├── Home.py
-├── pages/
-│   ├── Review_Queue.py
-│   ├── Customers.py
-│   ├── Enquiries.py
-│   └── Summary.py
-├── services/
-├── api/
-├── models/
-├── utils/
-└── assets/
+
 Main Modules
 Review Queue
 
