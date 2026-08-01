@@ -19,15 +19,22 @@ load_dotenv()
 
 API_BASE_URL = os.environ.get("API_BASE_URL", "http://127.0.0.1:8010").rstrip("/")
 _TIMEOUT = 15
+# generate-quotation does real work server-side (pricing calc, docx render,
+# then two separate LibreOffice --headless conversions to PDF) rather than
+# a simple DB read/write -- on Render's free-tier CPU this alone has been
+# observed taking ~20s. On top of that, Render free-tier instances cold-start
+# after idling, and a cold start can stack on top of a slow generation, so
+# the timeout is set generously to cover both happening together at once.
+_GENERATE_QUOTATION_TIMEOUT = 120
 
 
 class APIError(Exception):
     """Raised for anything -- network failure or a non-2xx response -- a page should st.error() and stop."""
 
 
-def _request(method: str, path: str, **kwargs):
+def _request(method: str, path: str, *, timeout: int = _TIMEOUT, **kwargs):
     try:
-        response = requests.request(method, f"{API_BASE_URL}{path}", timeout=_TIMEOUT, **kwargs)
+        response = requests.request(method, f"{API_BASE_URL}{path}", timeout=timeout, **kwargs)
     except requests.exceptions.RequestException as error:
         raise APIError(
             f"Couldn't reach the API at {API_BASE_URL} ({error.__class__.__name__}). "
@@ -89,6 +96,7 @@ def generate_quotation(
     result = _request(
         "POST",
         f"/enquiries/{enquiry_id}/generate-quotation",
+        timeout=_GENERATE_QUOTATION_TIMEOUT,
         json={
             "ref_no": ref_no,
             "completion_weeks_min": completion_weeks_min,

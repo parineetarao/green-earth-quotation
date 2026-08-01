@@ -11,3 +11,5 @@ python-docx
 streamlit
 pandas
 altair
+itsdangerous
+streamlit-cookies-controller
