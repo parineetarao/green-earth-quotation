@@ -54,7 +54,19 @@ def is_authenticated() -> bool:
     if serializer is None:
         return False
 
-    token = _cookie_controller().get(SESSION_COOKIE_NAME)
+    try:
+        token = _cookie_controller().get(SESSION_COOKIE_NAME)
+    except AttributeError:
+        # CookieController's browser round-trip (component getAll -> postMessage
+        # -> response) hasn't completed yet on this run, so its internal
+        # __cookies dict was never populated -- .get() (or even constructing
+        # the controller) blows up with AttributeError instead of returning
+        # None. This is a timing hiccup, not a real "not authenticated"
+        # answer, but the safe behavior either way is the same: show the
+        # login screen rather than crash. It resolves itself on the next
+        # rerun once the component responds.
+        return False
+
     if not token:
         return False
 
