@@ -15,7 +15,12 @@ from fastapi.responses import FileResponse
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from api.schemas import QuotationManualPricingNote, QuotationOut, QuotationStatusUpdate
+from api.schemas import (
+    QuotationManualPricingNote,
+    QuotationMarkSentManuallyNote,
+    QuotationOut,
+    QuotationStatusUpdate,
+)
 from api.services.email_sender import send_quotation_email
 from database.models import EnquiryStatus, Quotation, QuotationStatus
 from database.session import get_db
@@ -106,6 +111,38 @@ def approve_and_send(quotation_id: int, db: Session = Depends(get_db)):
 
     quotation.status = QuotationStatus.SENT
     quotation.sent_at = datetime.now(timezone.utc)
+    db.commit()
+    db.refresh(quotation)
+    return quotation
+
+
+@router.post("/{quotation_id}/mark-sent-manually", response_model=QuotationOut)
+def mark_sent_manually(
+    quotation_id: int, payload: QuotationMarkSentManuallyNote, db: Session = Depends(get_db)
+):
+    """
+    Review queue's escape hatch for when the business owner sends the
+    quotation himself (custom email body, PDFs attached by hand) instead
+    of using approve-and-send. Moves straight to SENT/sent_at like a real
+    send so downstream won/lost/no_response follow-up works the same way,
+    but never calls send_quotation_email -- sent_manually plus the
+    required note is the only record that this didn't go through Postmark.
+    """
+    quotation = db.get(Quotation, quotation_id)
+    if quotation is None:
+        raise HTTPException(status_code=404, detail="Quotation not found")
+    if quotation.status != QuotationStatus.DRAFT:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Only a draft quotation can be marked as sent manually (current status: {quotation.status.value}).",
+        )
+    if not payload.note.strip():
+        raise HTTPException(status_code=400, detail="A note is required to mark a quotation as sent manually.")
+
+    quotation.status = QuotationStatus.SENT
+    quotation.sent_at = datetime.now(timezone.utc)
+    quotation.sent_manually = True
+    quotation.notes = payload.note.strip()
     db.commit()
     db.refresh(quotation)
     return quotation

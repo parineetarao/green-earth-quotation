@@ -145,6 +145,7 @@ class QuotationOut(BaseModel):
     status: str
     created_at: datetime
     sent_at: datetime | None
+    sent_manually: bool
 
 
 class QuotationStatusUpdate(BaseModel):
@@ -168,6 +169,20 @@ class QuotationManualPricingNote(BaseModel):
     records a reviewer's note and moves the row to needs_manual_pricing;
     it deliberately does not accept a price, since inventing one here
     would be the exact fabrication CLAUDE.md's non-negotiables forbid.
+    """
+
+    note: str
+
+
+class QuotationMarkSentManuallyNote(BaseModel):
+    """
+    Body for POST /quotations/{id}/mark-sent-manually -- the review queue's
+    escape hatch for when the business owner sends the quotation himself
+    (custom email body, PDFs attached by hand) instead of using approve-
+    and-send. note is required, not optional: since this path never goes
+    through Postmark, the note is the only record of what actually
+    happened and why (e.g. "sent manually on 2026-08-01, confirmed by
+    phone").
     """
 
     note: str

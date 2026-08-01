@@ -16,11 +16,19 @@ theme.page_header("Enquiries", "All sales enquiries")
 try:
     enquiries = api_client.list_enquiries()
     customers = api_client.list_customers()
+    quotations = api_client.list_quotations()
 except APIError as error:
     st.error(str(error))
     st.stop()
 
 customer_by_id = {c["id"]: c for c in customers}
+
+# An enquiry with a rejected quotation resets to status "new" (see
+# reject_quotation in api/routes/quotations.py -- it's meant to stay
+# available for a fresh generate-quotation attempt), so that reset is left
+# exactly as-is. This only adds a visible "previously rejected" marker so
+# it isn't indistinguishable from an enquiry that was never quoted at all.
+rejected_enquiry_ids = {q["enquiry_id"] for q in quotations if q["status"] == "rejected"}
 
 
 def _customer_name(e: dict) -> str:
@@ -68,7 +76,12 @@ for e in page_items:
     cols[1].write(_customer_name(e))
     cols[2].write(capacity_kld(e.get("capacity_cum_day")))
     cols[3].write(SOURCE_LABELS.get(e["source"], e["source"]))
-    cols[4].markdown(theme.enquiry_status_badge(e["status"]), unsafe_allow_html=True)
+    status_html = theme.enquiry_status_badge(e["status"])
+    if eid in rejected_enquiry_ids:
+        status_html += (
+            '<div style="margin-top:4px;">' + theme.badge_html("critical", "Previously rejected") + "</div>"
+        )
+    cols[4].markdown(status_html, unsafe_allow_html=True)
     cols[5].write(format_datetime(e["created_at"]))
     with cols[6]:
         with st.container(key=f"link-enquiry-action-{eid}"):

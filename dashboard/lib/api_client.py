@@ -134,6 +134,15 @@ def approve_and_send(quotation_id: int) -> dict:
     return result
 
 
+def mark_sent_manually(quotation_id: int, note: str) -> dict:
+    result = _request(
+        "POST", f"/quotations/{quotation_id}/mark-sent-manually", json={"note": note}
+    )
+    list_quotations.clear()
+    list_enquiries.clear()
+    return result
+
+
 def reject_quotation(quotation_id: int) -> dict:
     result = _request("POST", f"/quotations/{quotation_id}/reject")
     list_quotations.clear()

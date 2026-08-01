@@ -149,13 +149,22 @@ if selected_id is not None:
         if not history:
             st.caption("No quotations for this customer yet.")
         else:
-            hist_widths = [1.1, 1.4, 0.9, 1.2, 1.0, 1.1]
-            hist_headers = ["Quotation #", "Created At", "Capacity", "Price (₹)", "Status", "In Verified Range"]
+            hist_widths = [1.1, 1.3, 0.8, 1.1, 0.9, 1.0, 1.3]
+            hist_headers = [
+                "Quotation #",
+                "Created At",
+                "Capacity",
+                "Price (₹)",
+                "Status",
+                "In Verified Range",
+                "Outcome",
+            ]
             hist_cols = st.columns(hist_widths)
             for col, label in zip(hist_cols, hist_headers):
                 col.markdown(f'<span class="ge-muted"><b>{label}</b></span>', unsafe_allow_html=True)
             st.markdown('<hr style="margin:6px 0 4px 0;">', unsafe_allow_html=True)
             for q in history:
+                qid = q["id"]
                 cols = st.columns(hist_widths)
                 cols[0].markdown(f"**{quotation_number(q)}**")
                 cols[1].write(format_datetime(q["created_at"]))
@@ -167,3 +176,44 @@ if selected_id is not None:
                 )
                 cols[4].markdown(theme.quotation_status_badge(q["status"]), unsafe_allow_html=True)
                 cols[5].markdown(theme.verified_range_badge(q["in_verified_range"]), unsafe_allow_html=True)
+
+                # Outcome (Won/Lost/No Response) -- only settable once a
+                # quotation has actually gone out ("sent"), and deliberately
+                # a small, occasional action rather than a prominent one:
+                # this records a real, final business outcome and the
+                # backend (PATCH /quotations/{id}/status) only accepts the
+                # transition from "sent", so once set it can't be casually
+                # re-clicked away.
+                with cols[6]:
+                    if q["status"] == "sent":
+                        with st.popover("Set outcome", use_container_width=True):
+                            st.caption(f"Mark {quotation_number(q)}'s outcome with the customer.")
+                            o1, o2, o3 = st.columns(3)
+                            with o1:
+                                if st.button("Won", key=f"outcome-won-{qid}", use_container_width=True):
+                                    try:
+                                        api_client.update_quotation_status(qid, "won")
+                                        st.toast(f"{quotation_number(q)} marked Won.")
+                                        st.rerun()
+                                    except APIError as error:
+                                        st.error(str(error))
+                            with o2:
+                                if st.button("Lost", key=f"outcome-lost-{qid}", use_container_width=True):
+                                    try:
+                                        api_client.update_quotation_status(qid, "lost")
+                                        st.toast(f"{quotation_number(q)} marked Lost.")
+                                        st.rerun()
+                                    except APIError as error:
+                                        st.error(str(error))
+                            with o3:
+                                if st.button("No Response", key=f"outcome-noresp-{qid}", use_container_width=True):
+                                    try:
+                                        api_client.update_quotation_status(qid, "no_response")
+                                        st.toast(f"{quotation_number(q)} marked No Response.")
+                                        st.rerun()
+                                    except APIError as error:
+                                        st.error(str(error))
+                    elif q["status"] in ("won", "lost", "no_response"):
+                        st.markdown(theme.quotation_status_badge(q["status"]), unsafe_allow_html=True)
+                    else:
+                        st.caption("—")

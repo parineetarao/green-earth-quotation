@@ -154,6 +154,32 @@ for q in page_items:
                     st.session_state["manual_pricing_target"] = qid
                     st.rerun()
 
+        # Subtle overflow action, deliberately not a third full-width button
+        # next to Approve/Reject -- this is for the exceptional case where
+        # the business owner sent the quotation himself (custom email body,
+        # PDFs attached by hand), not the everyday path.
+        with st.popover("More options", use_container_width=True):
+            st.caption(
+                "If this quotation was already sent outside the system "
+                "(e.g. the business owner emailed it himself), record it "
+                "here. This will not send anything through email."
+            )
+            manual_note = st.text_area(
+                "Note (required)",
+                key=f"sent-manually-note-{qid}",
+                placeholder="e.g. sent manually on 2026-08-01, confirmed by phone",
+            )
+            if st.button("Mark as sent manually", key=f"sent-manually-btn-{qid}"):
+                if not manual_note.strip():
+                    st.warning("Add a short note before saving.")
+                else:
+                    try:
+                        api_client.mark_sent_manually(qid, manual_note.strip())
+                        st.toast(f"{qnum} marked as sent manually.")
+                        st.rerun()
+                    except APIError as error:
+                        st.error(str(error))
+
     with st.expander(f"View documents -- {qnum}"):
         _render_document_downloads(q, qnum, key_prefix=f"row-{qid}")
 

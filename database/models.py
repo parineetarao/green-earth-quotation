@@ -205,5 +205,15 @@ class Quotation(Base):
         DateTime(timezone=True), server_default=func.now(), nullable=False
     )
     sent_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    # Added for the review queue's "Mark as sent manually" action -- the
+    # business owner sometimes sends the quotation himself (custom email
+    # body, PDFs attached by hand) instead of using approve-and-send. That
+    # action reuses status=SENT/sent_at so the rest of the system (won/lost
+    # follow-up, dashboards) treats it identically to a Postmark send, but
+    # sent_manually distinguishes the two so the review queue can show how
+    # it actually went out, and no email is ever sent through Postmark for
+    # this path. `notes` holds the required explanation (e.g. "sent
+    # manually on 2026-08-01, confirmed by phone").
+    sent_manually: Mapped[bool] = mapped_column(nullable=False, default=False)
 
     enquiry: Mapped["Enquiry"] = relationship(back_populates="quotations")
