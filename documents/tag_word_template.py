@@ -10,7 +10,8 @@ its own untracked source of truth.
 
 WHAT GETS TAGGED (confirmed against the real document text):
   - "M/s. "                                   -> + {{ customer_name }}
-  - "Kind Attn: Mr "                          -> + {{ attn_name }}
+  - "Kind Attn: "                             -> + {{ attn_name }}
+  - "Dear Sir,"                                -> "Dear Sir/Madam," (static, gender-neutral)
   - "Ref No: GEEC / SAT/C2/Q4/ETP/___/___ ... Date: __/__/____"
         -> "Ref No: {{ ref_no }}   Date: {{ quotation_date }}"
   - "... for 200 m3/day capacity )"           -> "... for {{ capacity }} m3/day capacity )"
@@ -79,8 +80,12 @@ def tag_paragraphs(document: Document) -> int:
             set_paragraph_text(paragraph, "M/s. {{ customer_name }}")
             tagged_count += 1
 
-        elif text.strip().startswith("Kind Attn: Mr"):
-            set_paragraph_text(paragraph, "Kind Attn: Mr {{ attn_name }}")
+        elif text.strip().startswith("Kind Attn:"):
+            set_paragraph_text(paragraph, "Kind Attn: {{ attn_name }}")
+            tagged_count += 1
+
+        elif text.strip() == "Dear Sir,":
+            set_paragraph_text(paragraph, "Dear Sir/Madam,")
             tagged_count += 1
 
         elif text.startswith("Ref No:"):
@@ -230,8 +235,8 @@ def main() -> None:
               "Either it's already gone, or the relationship ID has changed -- "
               "check word/_rels/document.xml.rels in the raw template.")
 
-    if paragraph_count < 6:
-        print("\nWARNING: expected 6 tagged paragraphs, got fewer. "
+    if paragraph_count < 7:
+        print("\nWARNING: expected 7 tagged paragraphs, got fewer. "
               "The real document text may not match what this script expects -- "
               "open the output and check by hand before trusting it.")
     if table_count < 12:

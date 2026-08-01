@@ -100,6 +100,11 @@ class Customer(Base):
     id: Mapped[int] = mapped_column(primary_key=True)
     name: Mapped[str] = mapped_column(Text, nullable=False)
     contact_person: Mapped[str | None] = mapped_column(Text)
+    # Salutation for contact_person (Mr/Ms/Mrs/Dr), kept separate rather than
+    # baked into contact_person -- letting a human pick it explicitly avoids
+    # the template/generator ever guessing a title from a name. None/"" means
+    # no title was selected.
+    contact_title: Mapped[str | None] = mapped_column(Text)
     phone: Mapped[str | None] = mapped_column(Text)
     email: Mapped[str | None] = mapped_column(Text)
     industry: Mapped[str | None] = mapped_column(Text)

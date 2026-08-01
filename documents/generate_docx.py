@@ -91,7 +91,10 @@ if __name__ == "__main__":
         context, pricing_result, dimension_result = build_quotation_context(
             capacity=200,
             customer_name="Test Industries Pvt. Ltd.",
-            attn_name="Rajesh Sharma",
+            # attn_name is now the fully-formed contact string the caller
+            # wants shown verbatim (title + name, or no title) -- the
+            # template no longer bakes in "Mr" itself.
+            attn_name="Ms Anjali Deshmukh",
             # NOTE: ref_no is intentionally a placeholder that must be
             # supplied per-quotation by the reviewing human -- there is
             # no single correct default. Ask the business owner what the

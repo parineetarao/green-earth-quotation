@@ -9,7 +9,7 @@ import streamlit as st
 
 from lib import api_client, theme, ui
 from lib.api_client import APIError
-from lib.format import capacity_kld, enquiry_number, format_datetime
+from lib.format import capacity_kld, enquiry_number, format_datetime, quotation_number
 
 theme.page_header("Enquiries", "All sales enquiries")
 
@@ -28,22 +28,28 @@ def _customer_name(e: dict) -> str:
     return customer["name"] if customer else "— (no customer linked)"
 
 
-FILTER_OPTIONS = ["All", "new", "needs_review", "quoted", "closed_won", "closed_lost"]
-selected_filter = st.pills(
-    "Status filter",
-    FILTER_OPTIONS,
-    default="All",
-    format_func=lambda v: theme.STATUS_LABELS.get(v, v) if v != "All" else "All",
-    label_visibility="collapsed",
-    key="enquiry_status_filter",
-)
-selected_filter = selected_filter or "All"
+filter_col, add_col = st.columns([5, 1])
+with filter_col:
+    FILTER_OPTIONS = ["All", "new", "needs_review", "quoted", "closed_won", "closed_lost"]
+    selected_filter = st.pills(
+        "Status filter",
+        FILTER_OPTIONS,
+        default="All",
+        format_func=lambda v: theme.STATUS_LABELS.get(v, v) if v != "All" else "All",
+        label_visibility="collapsed",
+        key="enquiry_status_filter",
+    )
+    selected_filter = selected_filter or "All"
+with add_col:
+    if st.button("+ Add enquiry", key="open-add-enquiry", type="primary", use_container_width=True):
+        st.session_state["add_enquiry_open"] = True
+        st.rerun()
 
 filtered = enquiries if selected_filter == "All" else [e for e in enquiries if e["status"] == selected_filter]
 filtered_sorted = sorted(filtered, key=lambda e: e["created_at"], reverse=True)
 page_items, meta = ui.paginate(filtered_sorted, page_size=5, key="enquiries")
 
-col_widths = [1.1, 1.4, 0.9, 0.9, 1.1, 1.4, 0.9]
+col_widths = [1.1, 1.3, 0.8, 0.8, 1.0, 1.3, 1.7]
 headers = ["Enquiry #", "Customer", "Capacity", "Source", "Status", "Created At", "Actions"]
 header_cols = st.columns(col_widths)
 for col, label in zip(header_cols, headers):
@@ -70,6 +76,19 @@ for e in page_items:
                 if st.button("Complete", key=f"complete-{eid}"):
                     st.session_state["complete_target"] = eid
                     st.rerun()
+            elif e["status"] == "new":
+                a1, a2 = st.columns(2)
+                with a1:
+                    if st.button(
+                        "Generate quotation", key=f"genq-{eid}", type="primary", use_container_width=True
+                    ):
+                        st.session_state["genq_target"] = eid
+                        st.session_state["genq_result"] = None
+                        st.rerun()
+                with a2:
+                    if st.button("View", key=f"view-enquiry-{eid}", use_container_width=True):
+                        st.session_state["view_target"] = eid
+                        st.rerun()
             else:
                 if st.button("View", key=f"view-enquiry-{eid}"):
                     st.session_state["view_target"] = eid
@@ -115,6 +134,187 @@ if view_target is not None:
             ]
             if timeline_budget:
                 st.markdown(" &nbsp;•&nbsp; ".join(timeline_budget))
+
+# ---------------------------------------------------------------------------
+# Add enquiry -- manual entry, the primary way enquiries enter the system
+# until the website form and email intake are live
+# ---------------------------------------------------------------------------
+
+if st.session_state.get("add_enquiry_open"):
+    with st.container(border=True):
+        st.markdown("**Add Enquiry**")
+
+        c1, c2 = st.columns(2)
+        with c1:
+            add_customer_name = st.text_input("Customer name *", key="add-name")
+            ct1, ct2 = st.columns([1, 2])
+            with ct1:
+                add_contact_title = st.selectbox(
+                    "Title", ["(none)", "Mr", "Ms", "Mrs", "Dr"], key="add-contact-title"
+                )
+            with ct2:
+                add_contact_person = st.text_input("Contact person", key="add-contact")
+            add_email = st.text_input("Email", key="add-email")
+            add_phone = st.text_input("Phone", key="add-phone")
+        with c2:
+            add_industry = st.text_input("Industry", key="add-industry")
+            add_location = st.text_input("Location", key="add-location")
+            add_capacity = st.number_input(
+                "Capacity (KLD) *", min_value=0.0, value=0.0, step=10.0, key="add-capacity"
+            )
+            add_requirement_details = st.text_area("Requirement details", key="add-details")
+
+        b1, b2 = st.columns(2)
+        with b1:
+            with st.container(key="cancel-add-enquiry"):
+                if st.button("Cancel", key="cancel-add-enquiry-btn", use_container_width=True):
+                    st.session_state["add_enquiry_open"] = False
+                    st.rerun()
+        with b2:
+            if st.button(
+                "Add enquiry", key="submit-add-enquiry", type="primary", use_container_width=True
+            ):
+                if not add_customer_name.strip():
+                    st.warning("Customer name is required.")
+                elif not add_capacity or add_capacity <= 0:
+                    st.warning("Capacity (KLD) must be a positive number.")
+                else:
+                    try:
+                        api_client.create_enquiry(
+                            {
+                                "customer_name": add_customer_name.strip(),
+                                "contact_person": add_contact_person.strip() or None,
+                                "contact_title": add_contact_title if add_contact_title != "(none)" else None,
+                                "email": add_email.strip() or None,
+                                "phone": add_phone.strip() or None,
+                                "industry": add_industry.strip() or None,
+                                "location": add_location.strip() or None,
+                                "capacity_cum_day": add_capacity,
+                                "requirement_details": add_requirement_details.strip() or None,
+                                "source": "manual",
+                            }
+                        )
+                        st.session_state["add_enquiry_open"] = False
+                        st.toast(f"Enquiry for {add_customer_name.strip()} added.")
+                        st.rerun()
+                    except APIError as error:
+                        st.error(str(error))
+
+# ---------------------------------------------------------------------------
+# Generate quotation -- the step manual entry (and any other "new" enquiry)
+# was previously stuck without a dashboard path for: capture the two fields
+# generate-quotation actually needs beyond what's already on the enquiry
+# (ref_no, completion week estimates -- see GenerateQuotationRequest's
+# docstring for why these are never defaulted), then call the existing
+# POST /enquiries/{id}/generate-quotation. The endpoint itself still owns
+# the in_verified_range safeguard -- this form only supplies the inputs.
+# ---------------------------------------------------------------------------
+
+genq_target = st.session_state.get("genq_target")
+if genq_target is not None:
+    target = next((e for e in enquiries if e["id"] == genq_target), None)
+    if target is not None:
+        existing_customer = customer_by_id.get(target.get("customer_id"))
+        with st.container(border=True):
+            st.markdown(f"**Generate Quotation -- {enquiry_number(target)} ({_customer_name(target)})**")
+            st.caption(f"Capacity: {capacity_kld(target.get('capacity_cum_day'))}")
+
+            c1, c2 = st.columns(2)
+            with c1:
+                ref_no = st.text_input("Reference No. *", key=f"gq-ref-{genq_target}")
+                existing_title = (existing_customer.get("contact_title") if existing_customer else "") or "(none)"
+                title_options = ["(none)", "Mr", "Ms", "Mrs", "Dr"]
+                at1, at2 = st.columns([1, 2])
+                with at1:
+                    attn_title = st.selectbox(
+                        "Title",
+                        title_options,
+                        index=title_options.index(existing_title) if existing_title in title_options else 0,
+                        key=f"gq-attn-title-{genq_target}",
+                    )
+                with at2:
+                    attn_name = st.text_input(
+                        "Attn (contact person)",
+                        value=(existing_customer.get("contact_person") if existing_customer else "") or "",
+                        key=f"gq-attn-{genq_target}",
+                    )
+            with c2:
+                w1, w2 = st.columns(2)
+                with w1:
+                    weeks_min = st.number_input(
+                        "Completion -- min weeks *", min_value=1, value=8, step=1, key=f"gq-wmin-{genq_target}"
+                    )
+                with w2:
+                    weeks_max = st.number_input(
+                        "Completion -- max weeks *", min_value=1, value=10, step=1, key=f"gq-wmax-{genq_target}"
+                    )
+
+            b1, b2 = st.columns(2)
+            with b1:
+                with st.container(key=f"cancel-genq-{genq_target}"):
+                    if st.button("Cancel", key=f"cancel-genq-btn-{genq_target}", use_container_width=True):
+                        st.session_state["genq_target"] = None
+                        st.rerun()
+            with b2:
+                if st.button(
+                    "Generate quotation",
+                    key=f"submit-genq-{genq_target}",
+                    type="primary",
+                    use_container_width=True,
+                ):
+                    if not ref_no.strip():
+                        st.warning("Reference No. is required.")
+                    elif weeks_max < weeks_min:
+                        st.warning("Max completion weeks must be at least the min.")
+                    else:
+                        try:
+                            resolved_attn_name = " ".join(
+                                part for part in (
+                                    attn_title if attn_title != "(none)" else None,
+                                    attn_name.strip() or None,
+                                ) if part
+                            ) or None
+                            quotation = api_client.generate_quotation(
+                                genq_target,
+                                ref_no.strip(),
+                                int(weeks_min),
+                                int(weeks_max),
+                                resolved_attn_name,
+                            )
+                            st.session_state["genq_target"] = None
+                            st.session_state["genq_result"] = {
+                                "quotation": quotation,
+                                "enquiry_label": enquiry_number(target),
+                            }
+                            st.rerun()
+                        except APIError as error:
+                            st.error(str(error))
+
+genq_result = st.session_state.get("genq_result")
+if genq_result is not None:
+    quotation = genq_result["quotation"]
+    qnum = quotation_number(quotation)
+    with st.container(border=True):
+        top_left, top_right = st.columns([5, 1])
+        if quotation["in_verified_range"]:
+            top_left.success(
+                f"{qnum} generated from {genq_result['enquiry_label']} -- "
+                f"{theme.format_inr(quotation['price_total'])}. It's now in the Review Queue awaiting approval."
+            )
+        else:
+            top_left.warning(
+                f"{qnum} generated from {genq_result['enquiry_label']}, but its capacity is outside the "
+                "verified pricing range -- no price was fabricated. It's in the Review Queue's manual-pricing "
+                "flow instead."
+            )
+        with top_right:
+            with st.container(key="dismiss-genq-result"):
+                if st.button("✕", key="dismiss-genq-result-btn"):
+                    st.session_state["genq_result"] = None
+                    st.rerun()
+        st.page_link(
+            "pages/1_review_queue.py", label="Go to Review Queue →", icon=":material/checklist:"
+        )
 
 # ---------------------------------------------------------------------------
 # Complete -- fill in what extraction couldn't determine
@@ -179,6 +379,7 @@ if complete_target is not None:
                                     "email": existing_customer.get("email") if existing_customer else None,
                                     "phone": existing_customer.get("phone") if existing_customer else None,
                                     "contact_person": existing_customer.get("contact_person") if existing_customer else None,
+                                    "contact_title": existing_customer.get("contact_title") if existing_customer else None,
                                     "industry": existing_customer.get("industry") if existing_customer else None,
                                     "location": existing_customer.get("location") if existing_customer else None,
                                     "capacity_cum_day": capacity,

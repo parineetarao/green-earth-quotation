@@ -30,6 +30,7 @@ def _find_or_create_customer(
     email: str | None = None,
     phone: str | None = None,
     contact_person: str | None = None,
+    contact_title: str | None = None,
     industry: str | None = None,
     location: str | None = None,
 ) -> Customer:
@@ -56,6 +57,7 @@ def _find_or_create_customer(
     customer = Customer(
         name=name,
         contact_person=contact_person,
+        contact_title=contact_title,
         phone=phone,
         email=email,
         industry=industry,
@@ -74,6 +76,7 @@ def create_enquiry(payload: EnquiryCreate, db: Session = Depends(get_db)):
         email=payload.email,
         phone=payload.phone,
         contact_person=payload.contact_person,
+        contact_title=payload.contact_title,
         industry=payload.industry,
         location=payload.location,
     )
@@ -84,6 +87,7 @@ def create_enquiry(payload: EnquiryCreate, db: Session = Depends(get_db)):
         product_type=ProductType.STP,
         capacity_cum_day=payload.capacity_cum_day,
         raw_message=payload.raw_message,
+        requirement_details=payload.requirement_details,
         status=EnquiryStatus.NEW,
     )
     db.add(enquiry)
@@ -179,6 +183,7 @@ def complete_enquiry(enquiry_id: int, payload: EnquiryComplete, db: Session = De
         email=payload.email,
         phone=payload.phone,
         contact_person=payload.contact_person,
+        contact_title=payload.contact_title,
         industry=payload.industry,
         location=payload.location,
     )

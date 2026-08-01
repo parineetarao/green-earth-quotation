@@ -72,6 +72,13 @@ def list_enquiries(status: str | None = None) -> list[dict]:
     return _request("GET", "/enquiries", params=params)
 
 
+def create_enquiry(payload: dict) -> dict:
+    result = _request("POST", "/enquiries", json=payload)
+    list_enquiries.clear()
+    list_customers.clear()
+    return result
+
+
 def generate_quotation(
     enquiry_id: int,
     ref_no: str,

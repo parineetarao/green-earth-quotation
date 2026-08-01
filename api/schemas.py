@@ -25,6 +25,7 @@ class CustomerOut(BaseModel):
     id: int
     name: str
     contact_person: str | None
+    contact_title: str | None
     phone: str | None
     email: str | None
     industry: str | None
@@ -52,12 +53,14 @@ class EnquiryCreate(BaseModel):
 
     customer_name: str
     contact_person: str | None = None
+    contact_title: str | None = None
     email: str | None = None
     phone: str | None = None
     industry: str | None = None
     location: str | None = None
     capacity_cum_day: float | None = None
     raw_message: str | None = None
+    requirement_details: str | None = None
     source: Literal["website_form", "manual"] = "website_form"
 
 
@@ -92,6 +95,7 @@ class EnquiryComplete(BaseModel):
 
     customer_name: str
     contact_person: str | None = None
+    contact_title: str | None = None
     email: str | None = None
     phone: str | None = None
     industry: str | None = None

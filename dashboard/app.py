@@ -32,15 +32,15 @@ enquiries = st.Page("pages/3_enquiries.py", title="Enquiries", url_path="enquiri
 summary = st.Page("pages/4_summary.py", title="Summary", url_path="summary")
 
 if is_authenticated():
-    pg = st.navigation([review_queue, customers, enquiries, summary], position="hidden")
+    pg = st.navigation([enquiries, review_queue, customers, summary], position="hidden")
 
     with st.sidebar:
         theme.render_sidebar_brand()
 
         nav_icons = {
+            enquiries: ":material/mail:",
             review_queue: ":material/checklist:",
             customers: ":material/group:",
-            enquiries: ":material/mail:",
             summary: ":material/bar_chart:",
         }
         for page, icon in nav_icons.items():

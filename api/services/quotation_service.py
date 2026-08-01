@@ -84,7 +84,10 @@ def generate_quotation(
         return quotation
 
     customer_name = enquiry.customer.name
-    resolved_attn_name = attn_name or enquiry.customer.contact_person or customer_name
+    customer_contact = " ".join(
+        part for part in (enquiry.customer.contact_title, enquiry.customer.contact_person) if part
+    )
+    resolved_attn_name = attn_name or customer_contact or customer_name
 
     context, pricing_result, _dimension_result = build_quotation_context(
         capacity=capacity,
